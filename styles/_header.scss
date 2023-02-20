@@ -1,14 +1,19 @@
 @import "variables";
 
 .header {
-    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    margin: 0 auto;
+    padding: 10px 0;
     font-weight: 700;
 
     &__top {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-bottom: 20px;
+        padding-bottom: 15px;
         border-bottom: 2px solid $borderlight;
     }
 
@@ -38,7 +43,7 @@
     }
 
     &__bottom {
-        padding: 20px 0;
+        padding: 10px 0;
     }
 
     &__links {
