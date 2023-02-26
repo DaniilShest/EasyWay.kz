@@ -1,15 +1,14 @@
 .main-slider {
+    margin-bottom: 40px;
 
     color: #FFF;
-
-    &__inner {
-        padding: 70px 0;
-    }
 
     &__item {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+
+        padding: 100px 0 150px 0;
 
         &-1 {
             background-image: url(../img/main/delivery-slide.png);
@@ -52,7 +51,50 @@
             font-weight: 500;
             font-size: 24px;
         }
+
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 
-    &__btn {}
+    &__btn {
+        margin-bottom: 140px;
+    }
+
+    .swiper-pagination {
+        margin-bottom: 20px;
+    }
+
+    .swiper-pagination-bullet {
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 12px;
+        color: #FFF;
+        opacity: 1;
+        background: rgba(255, 255, 255, 1);
+        transition: all .2s ease;
+    }
+
+    .swiper-pagination-bullet-active {
+        width: 12px;
+        height: 12px;
+        color: #fff;
+        background: #007aff;
+    }
+}
+
+
+.main-catalog {
+
+    &__list {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+
 }
