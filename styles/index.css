@@ -112,7 +112,7 @@ body.lock {
 }
 
 .wrapper {
-  padding-top: 130px;
+  padding-top: 132px;
 }
 
 .section {
@@ -183,7 +183,7 @@ body.lock {
   background-color: #075db3;
 }
 .header__bottom {
-  padding: 10px 0;
+  padding: 10px 0 12px;
 }
 .header__links {
   display: -webkit-box;
