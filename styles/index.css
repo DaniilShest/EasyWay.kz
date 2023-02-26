@@ -112,7 +112,7 @@ body.lock {
 }
 
 .wrapper {
-  padding-top: 132px;
+  padding-top: 130px;
 }
 
 .section {
@@ -183,7 +183,7 @@ body.lock {
   background-color: #075db3;
 }
 .header__bottom {
-  padding: 10px 0 12px;
+  padding: 10px 0;
 }
 .header__links {
   display: -webkit-box;
@@ -212,7 +212,7 @@ body.lock {
   transition: background-size 0.3s;
 }
 .header__link a:hover {
-  background-size: 100% 3px;
+  background-size: 100% 2px;
 }
 
 .logo {
