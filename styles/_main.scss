@@ -98,3 +98,77 @@
     }
 
 }
+
+
+.main-about {
+    background-color: #F3F9FF;
+    padding-bottom: 170px;
+
+    &__title {}
+
+    &__inner {
+        position: relative;
+    }
+
+    &__square {
+        background: transparent;
+        border-radius: 15px;
+        border: 10px solid $primary;
+        position: absolute;
+    }
+
+    &__square-1 {
+        width: 300px;
+        height: 300px;
+        top: 120px;
+    }
+
+    &__square-2 {
+        width: 400px;
+        height: 400px;
+        top: 270px;
+        left: 150px;
+    }
+
+    &__img {
+        width: 420px;
+        height: 420px;
+        object-fit: cover;
+        border-radius: 10px;
+        position: relative;
+        left: 65px;
+        z-index: 5;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 100px;
+    }
+
+    &__description {
+        max-width: 580px;
+    }
+
+    &__about {
+        font-weight: 700;
+        font-size: 26px;
+        margin-bottom: 24px
+    }
+
+    &__p {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+
+        color: $lightdark;
+
+        margin-bottom: 30px;
+
+        &:last-of-type {
+            margin-bottom: 55px;
+        }
+    }
+
+}

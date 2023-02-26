@@ -102,7 +102,7 @@ body.lock {
 .container {
   max-width: 1240px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 .title {
@@ -127,9 +127,26 @@ body.lock {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   font-weight: 700;
+  font-size: 20px;
 }
 .btn:hover {
-  background-color: #075db3;
+  background-color: #DAEDFE;
+  color: #0769CD;
+}
+
+.btn-light {
+  font-weight: 500;
+  font-size: 20px;
+  color: #0769CD;
+  background: #DAEDFE;
+  border-radius: 5px;
+  padding: 15px 45px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.btn-light:hover {
+  background: #0769CD;
+  color: #FFF;
 }
 
 .header {
@@ -170,17 +187,6 @@ body.lock {
 }
 .header__contact:last-child {
   margin-right: 0px;
-}
-.header__btn {
-  background-color: #0769CD;
-  padding: 15px 35px;
-  color: #FFF;
-  border-radius: 5px;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-.header__btn:hover {
-  background-color: #075db3;
 }
 .header__bottom {
   padding: 10px 0;
@@ -307,6 +313,71 @@ body.lock {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.main-about {
+  background-color: #F3F9FF;
+  padding-bottom: 170px;
+}
+.main-about__inner {
+  position: relative;
+}
+.main-about__square {
+  background: transparent;
+  border-radius: 15px;
+  border: 10px solid #0769CD;
+  position: absolute;
+}
+.main-about__square-1 {
+  width: 300px;
+  height: 300px;
+  top: 120px;
+}
+.main-about__square-2 {
+  width: 400px;
+  height: 400px;
+  top: 270px;
+  left: 150px;
+}
+.main-about__img {
+  width: 420px;
+  height: 420px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  position: relative;
+  left: 65px;
+  z-index: 5;
+}
+.main-about__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 100px;
+}
+.main-about__description {
+  max-width: 580px;
+}
+.main-about__about {
+  font-weight: 700;
+  font-size: 26px;
+  margin-bottom: 24px;
+}
+.main-about__p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #3A3A3A;
+  margin-bottom: 30px;
+}
+.main-about__p:last-of-type {
+  margin-bottom: 55px;
 }
 
 .catalog-item {
