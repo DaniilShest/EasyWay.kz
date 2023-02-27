@@ -236,10 +236,10 @@ body.lock {
   padding: 100px 0 150px 0;
 }
 .main-slider__item-1 {
-  background-image: url(../img/main/delivery-slide.png);
+  background-image: url(../img/main/1.jpg);
 }
 .main-slider__item-2 {
-  background-image: url(../img/main/delivery.png);
+  background-image: url(../img/main/3.jpg);
 }
 .main-slider__title {
   font-weight: 900;
@@ -295,10 +295,11 @@ body.lock {
   background: rgb(255, 255, 255);
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  margin: 0 7px !important;
 }
 .main-slider .swiper-pagination-bullet-active {
-  width: 12px;
-  height: 12px;
+  width: 36px;
+  border-radius: 10px;
   color: #fff;
   background: #007aff;
 }
