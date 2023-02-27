@@ -15,7 +15,6 @@ body {
     max-width: 1240px;
     margin: 0 auto;
     padding: 0 10px;
-
 }
 
 .title {
@@ -61,4 +60,11 @@ body {
         background: $primary;
         color: #FFF;
     }
+}
+
+.square-bg {
+    background-color: $primary;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: absolute;
 }
