@@ -120,6 +120,11 @@ body.lock {
   padding: 40px 0;
 }
 
+.logo {
+  width: 250px;
+  margin-left: -2px;
+}
+
 .btn {
   background-color: #0769CD;
   padding: 15px 35px;
@@ -225,10 +230,6 @@ body.lock {
   border-bottom: 2px solid #0769CD;
 }
 
-.logo {
-  width: 250px;
-}
-
 .main-slider {
   margin-bottom: 40px;
   color: #FFF;
@@ -321,13 +322,13 @@ body.lock {
 }
 
 .main-about {
-  background-color: #F3F9FF;
+  background-color: #FFF;
 }
 .main-about__wrapper {
   background-color: #0769CD;
 }
 .main-about__inner {
-  background-color: #F3F9FF;
+  background-color: #FFF;
   position: relative;
 }
 .main-about__square {
