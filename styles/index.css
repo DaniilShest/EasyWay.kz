@@ -231,33 +231,64 @@ body.lock {
 }
 
 .main-slider {
-  margin-bottom: 40px;
-  color: #FFF;
+  color: #101010;
 }
-.main-slider__item {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 100px 0 150px 0;
+.main-slider__wrapper {
+  padding: 20px 0;
 }
-.main-slider__item-1 {
-  background-image: url(../img/main/1.jpg);
+.main-slider__body {
+  background-color: #0769CD;
 }
-.main-slider__item-2 {
-  background-image: url(../img/main/3.jpg);
+.main-slider__square {
+  width: 250px;
+  height: 100%;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.main-slider__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0;
+}
+.main-slider__description {
+  margin-left: 30px;
+}
+.main-slider__img {
+  width: 500px;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 20px;
+  position: relative;
+  z-index: 2;
 }
 .main-slider__title {
   font-weight: 900;
-  font-size: 64px;
+  font-size: 40px;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
+}
+.main-slider__title span {
+  color: #0769CD;
 }
 .main-slider__text {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  max-width: 650px;
-  margin-bottom: 40px;
+  max-width: 540px;
+  margin-bottom: 28px;
 }
 .main-slider__points {
   margin-left: 25px;
@@ -270,14 +301,14 @@ body.lock {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 18px;
 }
 .main-slider__point svg {
   margin-right: 10px;
 }
 .main-slider__point p {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
 }
 .main-slider__point:last-child {
   margin-bottom: 0;
@@ -285,8 +316,15 @@ body.lock {
 .main-slider__btn {
   margin-bottom: 140px;
 }
+.main-slider .main__pagination {
+  position: relative;
+}
 .main-slider .swiper-pagination {
-  margin-bottom: 20px;
+  margin-left: 30px;
+  position: absolute;
+  text-align: left;
+  left: 0;
+  bottom: 70px !important;
 }
 .main-slider .swiper-pagination-bullet {
   border-radius: 50%;
@@ -295,9 +333,8 @@ body.lock {
   text-align: center;
   line-height: 30px;
   font-size: 12px;
-  color: #FFF;
   opacity: 1;
-  background: rgb(255, 255, 255);
+  background: rgb(196, 196, 196);
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   margin: 0 7px !important;
@@ -305,7 +342,6 @@ body.lock {
 .main-slider .swiper-pagination-bullet-active {
   width: 36px;
   border-radius: 10px;
-  color: #fff;
   background: #007aff;
 }
 
@@ -325,24 +361,25 @@ body.lock {
   background-color: #FFF;
 }
 .main-about__wrapper {
-  background-color: #0769CD;
+  background: -webkit-gradient(linear, left top, right top, color-stop(48%, rgb(7, 105, 205)), color-stop(48%, rgb(255, 255, 255)));
+  background: linear-gradient(90deg, rgb(7, 105, 205) 48%, rgb(255, 255, 255) 48%);
 }
 .main-about__inner {
   background-color: #FFF;
   position: relative;
 }
 .main-about__square {
-  width: 275px;
-  height: 494px;
+  width: 225px;
+  height: 534px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 .main-about__img {
-  width: 420px;
-  height: 420px;
+  width: 450px;
+  height: 450px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
-  position: relative;
-  left: 65px;
   z-index: 5;
   margin-right: 145px;
 }
@@ -353,7 +390,7 @@ body.lock {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px 0;
+  padding: 40px 0;
 }
 .main-about__description {
   max-width: 580px;
@@ -557,6 +594,17 @@ body.lock {
   width: 100%;
 }
 
+.blue-bg {
+  background-color: #FFF;
+}
+.blue-bg__inner {
+  background-color: #FFF;
+  position: relative;
+}
+.blue-bg__square {
+  position: absolute;
+  background-color: #0769CD;
+}
 .footer {
   background-color: #F6F6F6;
   font-size: 16px;
