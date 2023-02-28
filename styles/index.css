@@ -220,21 +220,40 @@ body.lock {
   font-weight: 500;
 }
 .header__link a {
+  position: relative;
+  /*задаём цвет ссылки*/
+  cursor: pointer;
+  line-height: 1;
+  /*задаём высоту строки*/
   text-decoration: none;
-  padding-bottom: 3px;
-  border-bottom: 2px solid transparent;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  /*убираем подчёркивание*/
 }
-.header__link a:hover {
-  border-bottom: 2px solid #0769CD;
+.header__link a:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  /*изменить на right:0;, чтобы изменить направление подчёркивания */
+  width: 0;
+  /*задаём длинну линии до наведения курсора*/
+  height: 2px;
+  /*задаём ширину линии*/
+  background-color: #0769CD;
+  /*задаём цвет линии*/
+  content: "";
+  -webkit-transition: width 0.2s ease-out;
+  transition: width 0.2s ease-out;
+  /*задаём время анимации*/
+}
+.header__link a:hover:after, .header__link a:focus:after {
+  width: 100%;
+  /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
 }
 
 .main-slider {
   color: #101010;
 }
 .main-slider__wrapper {
-  padding: 20px 0;
+  padding: 10px 0;
 }
 .main-slider__body {
   background-color: #0769CD;
