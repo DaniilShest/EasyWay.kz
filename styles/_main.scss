@@ -126,8 +126,6 @@
     }
 
     &__img {
-        width: 500px;
-        height: 500px;
         object-fit: cover;
         object-position: center;
         border-radius: 20px;
@@ -255,11 +253,9 @@
     }
 
     &__img {
-        width: 500px;
-        height: 500px;
         object-fit: cover;
         border-radius: 10px;
-        margin-right: 145px;
+        margin-right: 88px;
     }
 
     &__info {
@@ -417,7 +413,6 @@
     &__inner {
         display: flex;
         align-items: center;
-        justify-content: space-between;
     }
 
     &__square {
@@ -431,11 +426,10 @@
     }
 
     &__img {
-        max-width: 580px;
-        height: 480px;
         border-radius: 10px;
         object-fit: cover;
         object-position: center;
         flex-shrink: 2;
+        margin-right: 88px;
     }
 }
