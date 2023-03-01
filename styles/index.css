@@ -134,6 +134,13 @@ body.lock {
   transition: all 0.2s ease;
   font-weight: 700;
   font-size: 20px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+.btn:disabled {
+  background-color: #F4F2F2;
+  color: #727272;
 }
 .btn:hover {
   background-color: #DAEDFE;
@@ -218,6 +225,12 @@ body.lock {
 .header__link {
   font-size: 18px;
   font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .header__link a {
   position: relative;
@@ -247,6 +260,11 @@ body.lock {
 .header__link a:hover:after, .header__link a:focus:after {
   width: 100%;
   /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+.header__link img {
+  width: 13px;
+  height: 8px;
+  margin-left: 5px;
 }
 
 .main-slider {
@@ -574,6 +592,29 @@ body.lock {
   background: #0769CD;
 }
 
+.main-request__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main-request__img {
+  max-width: 580px;
+  height: 480px;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  -ms-flex-negative: 2;
+      flex-shrink: 2;
+}
+
 .catalog-item {
   max-width: 380px;
   background: #FFFFFF;
@@ -624,6 +665,85 @@ body.lock {
   position: absolute;
   background-color: #0769CD;
 }
+.form {
+  max-width: 500px;
+  height: 100%;
+  padding-left: 40px;
+}
+.form input {
+  width: 100%;
+  padding: 15px 0 15px 10px;
+  border-radius: 10px;
+  border: 1px solid #e9e9e9;
+  outline: 0;
+  margin-bottom: 20px;
+}
+.form input:focus {
+  border: 1px solid #0769CD;
+}
+.form textarea {
+  width: 100%;
+  padding: 15px 0 15px 10px;
+  border-radius: 10px;
+  border: 1px solid #e9e9e9;
+  outline: 0;
+  margin-bottom: 10px;
+}
+.form textarea:focus {
+  border: 1px solid #0769CD;
+}
+.form .checkbox {
+  margin-bottom: 16px;
+}
+.form .custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.form .custom-checkbox + label {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+.form .custom-checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  border: 1px solid #0769CD;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+.form .custom-checkbox:checked + label::before {
+  border-color: #0769CD;
+  background-color: #fff;
+  background-image: url(../img/form/tick.svg);
+  background-size: 10px;
+}
+.form__btn:disabled {
+  cursor: default;
+}
+.form__btn:disabled:hover {
+  background-color: #F4F2F2;
+  color: #727272;
+}
+
 .footer {
   background-color: #F6F6F6;
   font-size: 16px;

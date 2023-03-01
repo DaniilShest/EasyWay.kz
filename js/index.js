@@ -26,3 +26,15 @@ const mainTrust = new Swiper('.main-trust__slider', {
         clickable: true
     },
 });
+
+const checkbox = document.getElementById("form__checkbox")
+const btn = document.getElementById("form__btn")
+
+console.log(checkbox)
+
+
+checkbox.addEventListener("change", () => {
+    console.log('s')
+    if (btn.hasAttribute('disabled')) { btn.removeAttribute('disabled') }
+    else { btn.setAttribute('disabled', true) }
+})
