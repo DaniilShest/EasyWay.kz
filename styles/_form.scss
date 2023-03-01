@@ -64,6 +64,8 @@
         background-repeat: no-repeat;
         background-position: center center;
         background-size: 50% 50%;
+        position: relative;
+        top: -1px;
     }
 
     .custom-checkbox:checked+label::before {
@@ -71,6 +73,7 @@
         background-color: #fff;
         background-image: url(../img/form/tick.svg);
         background-size: 10px;
+
     }
 
     &__btn {

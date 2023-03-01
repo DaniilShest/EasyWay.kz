@@ -31,7 +31,7 @@
                         <li class="header__link"><a href="#">Доставка</a></li>
                         <li class="header__link"><a href="#">Монтаж и сервис</a></li>
                         <li class="header__link"><a href="#">Наши объекты</a></li>
-                        <li class="header__link"><a href="#">Тендеры</a></li>
+                        <!-- <li class="header__link"><a href="#">Тендеры</a></li> -->
                         <li class="header__link"><a href="#">Контакты</a></li>
                     </ul>
                 </nav>
@@ -378,7 +378,7 @@
                                         </div>
                                         <a href="#" class="main-slider__btn btn">Узнать подробнее</a>
                                     </div>
-                                    <img src="./img/main/certificated.jpg" alt="Доставка по казахстану"
+                                    <img src="./img/main/garantee.jpg" alt="Доставка по казахстану"
                                         class="main-slider__img">
                                 </div>
                             </div>
@@ -488,7 +488,7 @@
                                         </div>
                                         <a href="#" class="main-slider__btn btn">Узнать подробнее</a>
                                     </div>
-                                    <img src="./img/main/cost.webp" alt="Доставка по казахстану"
+                                    <img src="./img/main/cost.jpg" alt="Доставка по казахстану"
                                         class="main-slider__img">
                                 </div>
                             </div>
@@ -567,9 +567,27 @@
                             <img src="./img/catalog/sample.png" alt="" class="catalog-item__img"></a>
                         <div class="catalog-item__info">
                             <a href="">
-                                <h2 class="catalog-item__title"> ВПМ-00-01 <br> Вертикальная платформа-подъёмник
-                                    для инвалидов
+                                <h2 class="catalog-item__title"> ВПМ-001
                                 </h2>
+                                <h3>Вертикальный подъемник для инвалидов</h3>
+                            </a>
+                            <p class="catalog-item__cost">от 490 000 тенге</p>
+                            <ul class="catalog-item__features">
+                                <li class="catalog-item__feature">грузоподъемность: <span>до 250 кг.</span></li>
+                                <li class="catalog-item__feature">высота подъема: <span> до 3-х метров</span></li>
+                                <li class="catalog-item__feature">тип ограждения: <span>поручни (2 шт.)</span></li>
+                            </ul>
+                            <a href="" class="catalog-item__btn btn">Подробнее</a>
+                        </div>
+                    </li>
+                    <li class="main-catalog__item catalog-item">
+                        <a href="#">
+                            <img src="./img/catalog/sample.png" alt="" class="catalog-item__img"></a>
+                        <div class="catalog-item__info">
+                            <a href="">
+                                <h2 class="catalog-item__title"> ВПМ-001
+                                </h2>
+                                <h3>Вертикальный подъемник для инвалидов</h3>
                             </a>
                             <p class="catalog-item__cost">от 500 000 тенге</p>
                             <ul class="catalog-item__features">
@@ -585,27 +603,9 @@
                             <img src="./img/catalog/sample.png" alt="" class="catalog-item__img"></a>
                         <div class="catalog-item__info">
                             <a href="">
-                                <h2 class="catalog-item__title">ВПМ-00-01 <br> Вертикальная платформа-подъёмник
-                                    для инвалидов
+                                <h2 class="catalog-item__title"> ВПМ-001
                                 </h2>
-                            </a>
-                            <p class="catalog-item__cost">от 500 000 тенге</p>
-                            <ul class="catalog-item__features">
-                                <li class="catalog-item__feature">траектория: <span>сложная прямолинейная</span></li>
-                                <li class="catalog-item__feature">угол наклона трассы: <span> до 60°</span></li>
-                                <li class="catalog-item__feature">грузоподъемность: <span>до 400 кг</span></li>
-                            </ul>
-                            <a href="" class="catalog-item__btn btn">Подробнее</a>
-                        </div>
-                    </li>
-                    <li class="main-catalog__item catalog-item">
-                        <a href="#">
-                            <img src="./img/catalog/sample.png" alt="" class="catalog-item__img"></a>
-                        <div class="catalog-item__info">
-                            <a href="">
-                                <h2 class="catalog-item__title">ВПМ-00-01 <br> Вертикальная платформа-подъёмник
-                                    для инвалидов
-                                </h2>
+                                <h3>Вертикальный подъемник для инвалидов</h3>
                             </a>
                             <p class="catalog-item__cost">от 500 000 тенге</p>
                             <ul class="catalog-item__features">
@@ -767,19 +767,24 @@
         <section class="section main-request">
             <div class="container">
                 <h1 class="title main-request__title">Остались вопросы?</h1>
-                <div class="main-request__inner">
-                    <img src="./img/main/request.png" alt="" class="main-request__img">
-                    <form action="/" class="form">
-                        <input type="text" name="text-input" id="" placeholder="Ваше имя">
-                        <input type="tel" name="tel-input" id="" placeholder="Ваш телефон">
-                        <textarea name="textaria" id="" cols="10" rows="5" placeholder="Ваш вопрос"></textarea>
-                        <div class="checkbox">
-                            <input type="checkbox" class="custom-checkbox" name="checkbox" id="form__checkbox"><label
-                                for="form__checkbox">Согласен на обработку
-                                персональных данных</label>
-                        </div>
-                        <button disabled type="submit" id="form__btn" class="btn form__btn">Заказать звонок</button>
-                    </form>
+            </div>
+            <div class="main-request__wrapper blue-bg__wrapper">
+                <div class="container blue-bg__container">
+                    <div class="main-request__inner blue-bg__inner">
+                        <div class="main-request__square blue-bg__square"></div>
+                        <img src="./img/main/request.png" alt="" class="main-request__img">
+                        <form action="/" class="form">
+                            <input type="text" name="text-input" id="" placeholder="Ваше имя">
+                            <input type="tel" name="tel-input" id="" placeholder="Ваш телефон">
+                            <textarea name="textaria" id="" cols="10" rows="5" placeholder="Ваш вопрос"></textarea>
+                            <div class="checkbox">
+                                <input type="checkbox" class="custom-checkbox" name="checkbox"
+                                    id="form__checkbox"><label for="form__checkbox">Согласен на обработку
+                                    персональных данных</label>
+                            </div>
+                            <button disabled type="submit" id="form__btn" class="btn form__btn">Заказать звонок</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>

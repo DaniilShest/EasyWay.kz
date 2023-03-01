@@ -99,17 +99,15 @@
 
     &__body {
         background-color: $primary;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 1) 48%, rgba(7, 105, 205, 1) 48%);
     }
 
     &__content {}
 
     &__square {
         width: 250px;
-        height: 100%;
         right: 0;
         top: 0;
-        z-index: 1;
-
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
     }
@@ -120,12 +118,11 @@
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
-        padding: 20px 0;
     }
 
 
     &__description {
-        margin-left: 30px;
+        // margin-left: 30px;
     }
 
     &__img {
@@ -248,48 +245,26 @@
         position: relative;
     }
 
-    // &__square {
-    //     background: transparent;
-    //     border-radius: 15px;
-    //     border: 10px solid $primary;
-    //     position: absolute;
-    // }
 
     &__square {
-        width: 225px;
-        height: 534px;
+        width: 250px;
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
+        left: 0;
+        top: 0;
     }
 
-    // &__square-1 {
-    //     width: 300px;
-    //     height: 300px;
-    //     top: 120px;
-    // }
-
-    // &__square-2 {
-    //     width: 400px;
-    //     height: 400px;
-    //     top: 270px;
-    //     left: 150px;
-    // }
-
     &__img {
-        width: 450px;
-        height: 450px;
+        width: 500px;
+        height: 500px;
         object-fit: cover;
         border-radius: 10px;
-        // position: relative;
-        // left: 65px;
-        z-index: 5;
         margin-right: 145px;
     }
 
     &__info {
         display: flex;
         align-items: center;
-        padding: 40px 0;
     }
 
     &__description {
@@ -429,6 +404,8 @@
 
         .swiper-pagination-bullet-active {
             background: $primary;
+            width: 36px;
+            border-radius: 20px;
         }
     }
 }
@@ -441,6 +418,16 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+
+    &__square {
+        width: 290px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    &__wrapper {
+        background: linear-gradient(90deg, rgba(7, 105, 205, 1) 48%, rgba(255, 255, 255, 1) 48%);
     }
 
     &__img {
