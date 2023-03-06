@@ -1,4 +1,4 @@
-const swiper = new Swiper('.main-slider', {
+const mainSlider = new Swiper('.main-slider', {
     speed: 500,
     spaceBetween: 100,
     autoplay: {

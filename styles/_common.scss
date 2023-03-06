@@ -20,7 +20,7 @@ body {
 .title {
     font-weight: 700;
     font-size: 28px;
-    margin-bottom: 26px
+    margin-bottom: 30px
 }
 
 .wrapper {
@@ -29,6 +29,10 @@ body {
 
 .section {
     padding: 40px 0;
+
+    &.light-bg-section {
+        background: $lightbg;
+    }
 }
 
 .logo {
@@ -92,4 +96,8 @@ body {
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     position: absolute;
+}
+
+.swiper {
+    user-select: none;
 }
