@@ -1047,6 +1047,7 @@ body.lock {
 .breadcrumbs__item:last-child a {
   font-weight: 700;
   margin-right: 0;
+  color: #0769CD;
 }
 .breadcrumbs__item:last-child img {
   display: none;
