@@ -77,16 +77,5 @@
 
     }
 
-    &__btn {
-
-        &:disabled {
-            cursor: default;
-
-            &:hover {
-                background-color: #F4F2F2;
-                color: #727272;
-            }
-
-        }
-    }
+    &__btn {}
 }
