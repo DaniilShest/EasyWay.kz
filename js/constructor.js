@@ -2,8 +2,8 @@ const step = document.getElementById('item-constuctor-step')
 const next = document.getElementById('item-constuctor-next')
 const prev = document.getElementById('item-constuctor-prev')
 const price = document.getElementById('item-constuctor-price')
-let activeStep = 0
-let btns;
+const submitBtn = document.getElementById('item-constructor-submit')
+let activeStep = 0;
 const priceArray = {
     0: 440000
 }
@@ -62,7 +62,18 @@ function updateStep(index) {
         step.innerHTML += `
         <a class="btn-light item-constuctor__btn" data-price="${option.data}">${option.title}</a>`
     })
-    btns = document.querySelectorAll('.item-constuctor__btn')
+    const btns = getBtns()
+    updateBtns(btns)
+    updateControls(btns)
+}
+
+function getBtns() {
+    const btns = document.querySelectorAll('.item-constuctor__btn')
+    return btns
+}
+
+function updateBtns(btns) {
+
     btns.forEach(btn => {
         btn.addEventListener('click', () => {
 
@@ -71,20 +82,29 @@ function updateStep(index) {
             })
             btn.classList.add('active')
             priceArray[activeStep + 1] = Number(btn.dataset.price)
-
             updatePrice()
+            updateControls()
         })
     })
 }
 
-next.addEventListener('click', () => {
+function checkActivatedBtn(btns) {
+    btns.forEach((btn) => {
+        if (btn.classList.contains('active')) return true
+    })
+    return false
+}
+
+next.addEventListener('click', (e) => {
+    e.preventDefault()
     if (activeStep < formSteps.length - 1) {
         activeStep++;
         updateStep(activeStep)
     }
 })
 
-prev.addEventListener('click', () => {
+prev.addEventListener('click', (e) => {
+    e.preventDefault()
     if (activeStep > 0) {
         priceArray[activeStep] = 0
         priceArray[activeStep + 1] = 0
@@ -94,6 +114,20 @@ prev.addEventListener('click', () => {
     }
 })
 
+function updateControls(btns) {
+    if (activeStep === 0) prev.setAttribute('disabled', true)
+    if (activeStep > 0) prev.removeAttribute('disabled')
+
+    if (activeStep === formSteps.length - 1) next.setAttribute('disabled', true)
+    if (activeStep < formSteps.length - 1) next.removeAttribute('disabled')
+
+    if (activeStep === formSteps.length - 1) submitBtn.removeAttribute('disabled')
+    if (activeStep < formSteps.length - 1) submitBtn.setAttribute('disabled', true)
+
+    if (checkActivatedBtn(btns)) next.removeAttribute('disabled')
+    if (!checkActivatedBtn(btns)) next.setAttribute('disabled', true)
+}
+
 function updatePrice() {
     let sum = 0;
     for (let price of Object.values(priceArray)) {
@@ -102,4 +136,6 @@ function updatePrice() {
     price.innerHTML = sum
 }
 
-window.onload = updateStep(0)
+window.onload = () => {
+    updateStep(0)
+}
