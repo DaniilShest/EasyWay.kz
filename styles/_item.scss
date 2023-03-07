@@ -75,7 +75,7 @@
         height: 100px;
         box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
-        object-fit: cover;
+        object-fit: contain;
         object-position: center;
         cursor: pointer;
     }
@@ -360,5 +360,103 @@
 
     &__blue {
         background-color: $lightbg;
+    }
+}
+
+.section {}
+
+.item-constuctor {
+
+    &__wrapper {
+        padding: 40px 25px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+    }
+
+    &__title {}
+
+    &__inner {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &__img {
+        width: 500px;
+        height: 460px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 5px;
+        margin-right: 50px
+    }
+
+    &__form {
+        flex: 1 1 auto;
+    }
+
+    &__step {}
+
+    &__question {
+        font-weight: 400;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    &__btns {}
+
+    &__btn {
+        font-weight: 500;
+        font-size: 18px;
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+
+        &.active {
+            background-color: $primary;
+            color: #FFF;
+        }
+    }
+
+    &__controls {
+        display: flex;
+        align-items: stretch;
+        justify-content: right;
+        margin-bottom: 30px;
+    }
+
+    &__btn-prev {
+        max-width: 250px;
+        margin-right: 30px;
+        font-weight: 500;
+        font-size: 16px;
+        padding: 10px 10px;
+    }
+
+    &__btn-next {
+        font-weight: 500;
+        font-size: 16px;
+        max-width: 250px;
+        font-weight: 500;
+        padding: 10px 10px;
+    }
+
+    &__footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__price {
+        p {
+            font-weight: 500;
+            font-size: 16px;
+
+            span {
+                font-weight: 700;
+                font-size: 24px;
+                color: $primary;
+            }
+        }
     }
 }

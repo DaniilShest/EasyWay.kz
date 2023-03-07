@@ -89,6 +89,19 @@ body {
         background: $primary;
         color: #FFF;
     }
+
+    &:disabled {
+        background-color: #F4F2F2;
+        color: #727272;
+        border: 2px solid transparent;
+
+        &:hover {
+            cursor: default;
+            background-color: #F4F2F2;
+            color: #727272;
+            border: 2px solid transparent;
+        }
+    }
 }
 
 .square-bg {
