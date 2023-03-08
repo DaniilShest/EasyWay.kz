@@ -372,6 +372,7 @@
         background: #FFFFFF;
         box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.25);
         border-radius: 10px;
+        position: relative;
     }
 
     &__title {}
@@ -382,7 +383,7 @@
     }
 
     &__img {
-        width: 500px;
+        width: 460px;
         height: 460px;
         object-fit: cover;
         object-position: center;
@@ -392,6 +393,57 @@
 
     &__form {
         flex: 1 1 auto;
+        height: 620px;
+    }
+
+    &__progress {
+        position: relative;
+    }
+
+    &__line {
+        position: absolute;
+        width: 100%;
+        height: 7px;
+        border-radius: 10px;
+        background-color: #F4F2F2;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all .2s ease;
+
+        &.active {
+            width: 20%;
+            background-color: $primary;
+        }
+    }
+
+    &__points {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    &__point {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #F4F2F2;
+        color: #727272;
+        font-weight: 700;
+        font-size: 18px;
+        position: relative;
+
+        &.active {
+            color: #FFF;
+            background: $primary;
+        }
+
+        span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
     }
 
     &__step {}
@@ -418,6 +470,12 @@
         }
     }
 
+    &__bottom {
+        position: absolute;
+        bottom: 40px;
+        right: 25px;
+    }
+
     &__controls {
         display: flex;
         align-items: stretch;
@@ -430,7 +488,7 @@
         margin-right: 30px;
         font-weight: 500;
         font-size: 16px;
-        padding: 10px 10px;
+        padding: 10px 15px;
     }
 
     &__btn-next {
@@ -438,7 +496,7 @@
         font-size: 16px;
         max-width: 250px;
         font-weight: 500;
-        padding: 10px 10px;
+        padding: 10px 15px;
     }
 
     &__footer {
