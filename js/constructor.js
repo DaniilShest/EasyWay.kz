@@ -6,8 +6,8 @@ const submitBtn = document.getElementById('item-constructor-submit')
 const points = document.getElementById('item-constuctor-points')
 const line = document.getElementById('item-constuctor-line')
 const img = document.getElementById('item-constuctor-img')
-const requets = document.getElementById('item-constuctor-request')
 let activeStep = 0;
+let constructorCheckbox;
 const priceArray = {
     0: 440000
 }
@@ -21,34 +21,34 @@ const formSteps = [
         title: 'Высота подъема',
         options: [
             {
-                title: 'до 1 метра',
+                title: 'Высота подъема до 1 метра',
                 data: 0,
                 img: '../img/item/1.png'
             },
             {
-                title: 'до 1,5 метров',
+                title: 'Высота подъема до 1,5 метров',
                 data: 0,
                 img: '../img/item/2.png'
             },
             {
-                title: 'до 2 метров',
+                title: 'Высота подъема до 2 метров',
                 data: 0,
                 img: '../img/item/3.png'
             },
             {
-                title: 'до 2,5 метров',
+                title: 'Высота подъема до 2,5 метров',
                 data: 50000,
                 img: '../img/item/4.png'
             },
             {
-                title: 'до 3 метров',
+                title: 'Высота подъема до 3 метров',
                 data: 50000,
                 img: '../img/item/5.png'
             }
         ]
     },
     {
-        title: 'Площадка подъёмного механизма',
+        title: 'Габариты площадки',
         options: [
             {
                 title: '1040 х 960 мм.',
@@ -63,7 +63,7 @@ const formSteps = [
         ]
     },
     {
-        title: 'Покрытие площадки подъемного механизма',
+        title: 'Покрытие площадки',
         options: [
             {
                 title: 'Перфорированный лист',
@@ -78,7 +78,7 @@ const formSteps = [
         ]
     },
     {
-        title: 'Скат с площадки подъемного механизма',
+        title: 'Скат с площадки',
         options: [
             {
                 title: 'Cтальной (площадка с перфорированным листом)',
@@ -291,7 +291,12 @@ function updateStep(index) {
         <input type="text" required name="text-input" id="" placeholder="Ваше имя">
         <input type="tel" required name="tel-input" id="" placeholder="Ваш телефон">
         <textarea name="textaria" id="" cols="10" rows="5" placeholder="Ваш вопрос"></textarea>
+        <div class="checkbox">
+        <input type="checkbox" class="custom-checkbox" name="form-constructor-checkbox" id="form-constructor-checkbox"><label for="form-constructor-checkbox">
+            Согласен на обработку персональных данных</label>
+        </div>
         `
+        updateCheckbox()
     }
 
     if (activeStep < formSteps.length - 1) {
@@ -364,9 +369,19 @@ function updateControls(btns) {
         if (!checkActivatedBtn(btns)) next.setAttribute('disabled', true)
     }
 
-    if (activeStep === formSteps.length - 1) submitBtn.removeAttribute('disabled')
-    if (activeStep < formSteps.length - 1) submitBtn.setAttribute('disabled', true)
+    updateSubmit()
+}
 
+function updateSubmit() {
+    if (activeStep === formSteps.length - 1 && constructorCheckbox.checked) submitBtn.removeAttribute('disabled')
+    else submitBtn.setAttribute('disabled', true)
+}
+
+function updateCheckbox() {
+    constructorCheckbox = document.getElementById('form-constructor-checkbox')
+    constructorCheckbox.onchange = () => {
+        updateSubmit()
+    }
 }
 
 function updatePrice() {

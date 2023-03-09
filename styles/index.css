@@ -110,6 +110,7 @@ body.lock {
   font-weight: 700;
   font-size: 28px;
   margin-bottom: 30px;
+  line-height: 22px;
 }
 
 .wrapper {
@@ -860,6 +861,14 @@ body.lock {
 
 .item-info {
   margin-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 500px;
 }
 .item-info__title {
   font-weight: 700;
@@ -915,6 +924,9 @@ body.lock {
   text-decoration-line: line-through;
   color: #0769CD;
   margin-bottom: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 .item-info__btns {
   display: -webkit-box;
@@ -1097,6 +1109,7 @@ body.lock {
   border-width: 1px;
   border-color: #e9e9e9;
   border-style: solid;
+  width: 50%;
 }
 .item-table__blue {
   background-color: #F3F9FF;

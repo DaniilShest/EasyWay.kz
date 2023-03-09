@@ -87,6 +87,9 @@
 
 .item-info {
     margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
 
     &__title {
         font-weight: 700;
@@ -150,6 +153,7 @@
         text-decoration-line: line-through;
         color: $primary;
         margin-bottom: 20px;
+        flex: 1 1 auto;
     }
 
     &__btns {
@@ -356,14 +360,13 @@
         border-color: $borderlight;
         border-style: solid;
         // border: 1px solid $borderlight;
+        width: 50%;
     }
 
     &__blue {
         background-color: $lightbg;
     }
 }
-
-.section {}
 
 .item-constuctor {
 
