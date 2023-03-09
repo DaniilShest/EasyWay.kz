@@ -6,6 +6,28 @@ const submitBtn = document.getElementById('item-constructor-submit')
 const points = document.getElementById('item-constuctor-points')
 const line = document.getElementById('item-constuctor-line')
 const img = document.getElementById('item-constuctor-img')
+
+document.querySelectorAll('a[href^="#"').forEach(link => {
+
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        let href = this.getAttribute('href').substring(1);
+
+        const scrollTarget = document.getElementById(href);
+
+        // const topOffset = document.querySelector('.item-constuctor').offsetHeight;
+        const topOffset = 100; // если не нужен отступ сверху 
+        const elementPosition = scrollTarget.getBoundingClientRect().top;
+        const offsetPosition = elementPosition - topOffset;
+
+        window.scrollBy({
+            top: offsetPosition,
+            behavior: 'smooth'
+        });
+    });
+});
+
 let activeStep = 0;
 let constructorCheckbox;
 const priceArray = {
