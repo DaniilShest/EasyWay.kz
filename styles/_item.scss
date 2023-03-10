@@ -1,9 +1,5 @@
 @import "variables";
 
-.first-section {
-    padding-top: 0;
-}
-
 .item-main {
 
     &__wrapper {
@@ -450,7 +446,7 @@
     }
 
     &__btn-prev {
-        max-width: 250px;
+        width: 240px;
         margin-right: 30px;
         font-weight: 500;
         font-size: 18px;
@@ -458,6 +454,7 @@
     }
 
     &__btn-next {
+        width: 240px;
         font-weight: 500;
         font-size: 18px;
         max-width: 250px;
@@ -483,5 +480,9 @@
                 color: $primary;
             }
         }
+    }
+
+    &__submit {
+        width: 240px;
     }
 }

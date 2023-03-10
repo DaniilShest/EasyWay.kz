@@ -1,5 +1,3 @@
-
-
 const checkbox = document.getElementById("form__checkbox")
 const btn = document.getElementById("form__btn")
 
