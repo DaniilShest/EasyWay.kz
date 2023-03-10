@@ -3,7 +3,9 @@
     background-color: #FFF;
 
 
-    &__wrapper {}
+    &__wrapper {
+        background: linear-gradient(90deg, rgba(255, 255, 255, 1) 48%, rgba(7, 105, 205, 1) 48%);
+    }
 
     &__inner {
         background-color: #FFF;
@@ -15,6 +17,7 @@
             z-index: 2;
             width: 500px;
             height: 500px;
+            border-radius: 20px;
         }
     }
 
@@ -23,7 +26,11 @@
         background-color: $primary;
         z-index: 1;
         height: 100%;
+        width: 250px;
     }
 
-    &__content {}
+    &__content {
+        display: flex;
+        align-items: center;
+    }
 }

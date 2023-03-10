@@ -1,0 +1,158 @@
+.delivery-main {
+
+    &__wrapper {}
+
+    &__inner {}
+
+    &__square {
+        top: 0;
+        right: 0;
+
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    &__info {
+        display: flex;
+        align-self: center;
+        justify-content: space-between;
+    }
+
+    &__description {}
+
+    &__title {
+        font-weight: 900;
+        font-size: 40px;
+        text-transform: uppercase;
+        margin-bottom: 28px;
+
+        span {
+            color: $primary
+        }
+    }
+
+    &__text {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        max-width: 540px;
+        margin-bottom: 28px;
+    }
+
+    &__points {
+        margin-left: 25px;
+        margin-bottom: 60px;
+    }
+
+    &__point {
+        display: flex;
+        align-items: center;
+
+        svg {
+            margin-right: 10px;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 20px;
+        }
+
+        margin-bottom: 18px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__img {
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.delivery-item {
+
+    max-width: 380px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    position: relative;
+
+    &__list {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+
+    &__img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        width: 100%;
+    }
+
+    &__info {
+        padding: 12px 19px 24px;
+
+        h3 {
+            font-size: 16px;
+        }
+    }
+
+    &__title {
+        font-size: 20px;
+        line-height: 23px;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        font-size: 16px;
+        color: $lightdark;
+    }
+}
+
+.delivery-table {
+
+    &__table {
+        border-radius: 5px;
+        width: 100%;
+        border-spacing: 0;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+
+        tr {
+            &:last-child {
+                border-bottom-right-radius: 5px;
+                border-bottom-left-radius: 5px;
+            }
+        }
+
+    }
+
+    &__header {
+        background: $primary;
+        color: #FFF;
+        font-size: 20px;
+        font-weight: 700;
+        padding: 10px 0;
+
+        &:first-child {
+            border-top-left-radius: 5px;
+        }
+
+        &:last-child {
+            border-top-right-radius: 5px;
+        }
+    }
+
+    &__column {
+        padding: 10px 20px;
+        border-width: 1px;
+        border-color: $borderlight;
+        border-style: solid;
+        // width: 20%;
+    }
+
+    &__blue {
+        background-color: $lightbg;
+    }
+}

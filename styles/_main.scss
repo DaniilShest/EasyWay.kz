@@ -98,7 +98,6 @@
     }
 
     &__body {
-        background-color: $primary;
         background: linear-gradient(90deg, rgba(255, 255, 255, 1) 48%, rgba(7, 105, 205, 1) 48%);
     }
 
@@ -128,9 +127,6 @@
     &__img {
         object-fit: cover;
         object-position: center;
-        border-radius: 20px;
-        position: relative;
-        z-index: 2;
     }
 
     &__title {
@@ -142,8 +138,6 @@
         span {
             color: $primary
         }
-
-        ;
     }
 
     &__text {
@@ -185,6 +179,7 @@
 
     .main__pagination {
         position: relative;
+        top: 40px;
     }
 
     .swiper-pagination {
@@ -260,11 +255,6 @@
         border-radius: 10px;
         margin-right: 88px;
         // box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.25);
-    }
-
-    &__info {
-        display: flex;
-        align-items: center;
     }
 
     &__description {
