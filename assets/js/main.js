@@ -1,7 +1,8 @@
-const checkbox = document.getElementById("form__checkbox")
-const btn = document.getElementById("form__btn")
+const popupCheckbox = document.getElementById("popup-checkbox")
+const popupBtn = document.getElementById("popup-btn")
 
-checkbox.addEventListener("change", () => {
-    if (btn.hasAttribute('disabled')) { btn.removeAttribute('disabled') }
-    else { btn.setAttribute('disabled', true) }
+popupCheckbox.addEventListener("change", () => {
+    console.log(popupBtn)
+    if (popupBtn.hasAttribute('disabled')) { popupBtn.removeAttribute('disabled') }
+    else { popupBtn.setAttribute('disabled', true) }
 })
