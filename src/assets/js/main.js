@@ -1,1 +1,1 @@
-//= components/request.js
+//= components/popup.js

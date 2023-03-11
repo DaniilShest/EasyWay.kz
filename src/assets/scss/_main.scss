@@ -20,8 +20,6 @@
         border-bottom-left-radius: 20px;
     }
 
-
-
     &__content {
         display: flex;
         align-items: flex-start;
@@ -330,10 +328,6 @@
     }
 
     &__img {
-        border-radius: 10px;
-        object-fit: cover;
-        object-position: center;
-        flex-shrink: 2;
         margin-right: 88px;
     }
 }

@@ -19,6 +19,9 @@
     &__img {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
+        object-fit: cover;
+        object-position: center;
+        height: 260px;
         width: 100%;
     }
 

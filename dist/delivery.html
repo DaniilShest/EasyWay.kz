@@ -24,7 +24,7 @@
                 <div class="header__contacts">
                     <div class="header__contact"><a href="mailto:zakaz@easyway.kz">zakaz@easyway.kz</a></div>
                     <div class="header__contact"><a href="tel:77077895550">8 (707) 789-55-50</a></div>
-                    <div class="header__contact"><a class="header__btn btn" href="#">Заказать звонок</a></div>
+                    <div class="header__contact"><a class="header__btn btn" href="#popup">Заказать звонок</a></div>
                 </div>
                 <div class="hamburger-menu">
                     <input id="menu__toggle" type="checkbox" />
@@ -37,7 +37,7 @@
                             <a class="menu__item" href="#">Информация</a>
                         </li>
                         <li>
-                            <a class="menu__item" href="#">Подъемники для инвалидов</a>
+                            <a class="menu__item" href="./catalog.html">Подъемники для инвалидов</a>
                         </li>
                         <li><a class="menu__item" href="./delivery.html">Доставка</a></li>
                         <li><a class="menu__item" href="#">Монтаж и сервис</a></li>
@@ -45,7 +45,7 @@
                         <li><a class="menu__item" href="./contact.html">Контакты</a></li>
                         <div class="menu__item"><a href="mailto:zakaz@easyway.kz">zakaz@easyway.kz</a></div>
                         <div class="menu__item"><a href="tel:77077895550">8 (707) 789-55-50</a></div>
-                        <div class="menu__item blue"><a href="#">Заказать звонок</a>
+                        <div class="menu__item blue"><a href="#popup">Заказать звонок</a>
                         </div>
                     </ul>
                 </div>
@@ -55,7 +55,7 @@
                     <ul class="header__links">
                         <li class="header__link"><a href="#">Информация</a><img src="./assets/img/header/arrow.svg" alt="">
                         </li>
-                        <li class="header__link"><a href="#">Подъемники для инвалидов</a><img
+                        <li class="header__link"><a href="./catalog.html">Подъемники для инвалидов</a><img
                                 src="./assets/img/header/arrow.svg" alt=""></li>
                         <li class="header__link"><a href="./delivery.html">Доставка</a></li>
                         <li class="header__link"><a href="#">Монтаж и сервис</a></li>
@@ -109,13 +109,46 @@
                                     </div>
                                 </div>
                             </div>
-                            <img src="./assets/img/main/delivery.webp" alt="Доставка" class="delivery-main__img">
+                            <div class="delivery-main__img blue-bg__img">
+                                <img src="./assets/img/main/delivery.webp" alt="Доставка">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         
+        <section class="section delivery-items">
+            <div class="container">
+                <div class="delivery-items__title title">Способы получения оборудования</div>
+                <ul class="delivery-items__list">
+                    <li class="delivery-items__item delivery-item">
+                        <img src="./assets/img/delivery/1.webp" alt="" class="delivery-item__img">
+                        <div class="delivery-item__info">
+                            <h2 class="delivery-item__title">Самовывоз со склада</h2>
+                            <p class="delivery-item__text">Вы можете забрать продукцию с нашего склада по адресу: г.Челябинск,
+                                ул. Линейная, 92</p>
+                        </div>
+                    </li>
+                    <li class="delivery-items__item delivery-item">
+                        <img src="./assets/img/delivery/2.webp" alt="" class="delivery-item__img">
+                        <div class="delivery-item__info">
+                            <h2 class="delivery-item__title">Доставка до терминала ТК</h2>
+                            <p class="delivery-item__text">Привезём подъемное оборудование до терминала транспортной компании на
+                                ваш выбор</p>
+                        </div>
+                    </li>
+                    <li class="delivery-items__item delivery-item">
+                        <img src="./assets/img/delivery/3.webp" alt="" class="delivery-item__img">
+                        <div class="delivery-item__info">
+                            <h2 class="delivery-item__title">Доставка до указанного адреса</h2>
+                            <p class="delivery-item__text">Организуем доставку до вашего склада или места установки подъемников
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
         <section class="section delivery-map">
             <div class="container">
                 <h1 class="title">Осуществляем доставку по всему Казахстану</h1>
@@ -129,175 +162,147 @@
             </div>
         </section>
         
-        <section class="section delivery-item__section">
-            <div class="container">
-                <h1 class="title">Способы получения подъемников</h1>
-                <ul class="delivery-item__list">
-                    <li class="item-delivery__item delivery-item">
-                        <img src="./assets/img/delivery/1.webp" alt="" class="delivery-item__img">
-                        <div class="delivery-item__info">
-                            <h2 class="delivery-item__title"> Самовывоз со склада</h2>
-                            <p class="delivery-item__text">Вы можете забрать продукцию с нашего склада по адресу:
-                                г.Челябинск, ул. Линейная, 92</p>
-                        </div>
-                    </li>
-                    <li class="item-delivery__item delivery-item">
-                        <img src="./assets/img/delivery/2.webp" alt="" class="delivery-item__img">
-                        <div class="delivery-item__info">
-                            <h2 class="delivery-item__title"> Доставка до терминала тк</h2>
-                            <p class="delivery-item__text">Привезём подъемное оборудование до терминала
-                                транспортной
-                                компании на ваш выбор</p>
-                        </div>
-                    </li>
-                    <li class="item-delivery__item delivery-item">
-                        <img src="./assets/img/delivery/3.webp" alt="" class="delivery-item__img">
-                        <div class="delivery-item__info">
-                            <h2 class="delivery-item__title"> Доставка до указанного адреса</h2>
-                            <p class="delivery-item__text">Организуем доставку до вашего склада или места установки
-                                подъемников</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        
         <section class="section delivery-table">
             <div class="container">
                 <h1 class="title">Сроки и стоимость доставки</h1>
         
-                <table class="delivery-table__table">
-                    <thead>
-                        <tr>
-                            <th class="delivery-table__header">Регион доставки</th>
-                            <th class="delivery-table__header">Транспортная компания</th>
-                            <th class="delivery-table__header">Срок доставки *</th>
-                            <th class="delivery-table__header">Стоимость доставки *</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="delivery-table__column left">Астана</td>
-                            <td class="delivery-table__column">Jet-Logistic</td>
-                            <td class="delivery-table__column">3-5 дней</td>
-                            <td class="delivery-table__column">20 000 ₸</td>
-                        </tr>
-                        <tr class="delivery-table__blue">
-                            <td class="delivery-table__column left">Алматы</td>
-                            <td class="delivery-table__column">Jet-Logistic</td>
-                            <td class="delivery-table__column">3-5 дней</td>
-                            <td class="delivery-table__column">20 000 ₸</td>
-                        </tr>
-                        <tr>
-                            <td class="delivery-table__column left">Шымкент</td>
-                            <td class="delivery-table__column">Jet-Logistic</td>
-                            <td class="delivery-table__column">3-5 дней</td>
-                            <td class="delivery-table__column">20 000 ₸</td>
-                        </tr>
-                        <tr class="delivery-table__blue">
-                            <td class="delivery-table__column left">Семей</td>
-                            <td class="delivery-table__column">Jet-Logistic</td>
-                            <td class="delivery-table__column">3-5 дней</td>
-                            <td class="delivery-table__column">20 000 ₸</td>
-                        </tr>
-                        <tr>
-                            <td class="delivery-table__column left">Кокшетау</td>
-                            <td class="delivery-table__column">Jet-Logistic</td>
-                            <td class="delivery-table__column">3-5 дней</td>
-                            <td class="delivery-table__column">20 000 ₸</td>
-                        </tr>
-                        <tr class="delivery-table__blue">
-                            <td class="delivery-table__column left">Актобе</td>
-                            <td class="delivery-table__column">Jet-Logistic</td>
-                            <td class="delivery-table__column">3-5 дней</td>
-                            <td class="delivery-table__column">20 000 ₸</td>
-                        </tr>
-                        <tr>
-                            <td class="delivery-table__column left">Конаев</td>
-                            <td class="delivery-table__column">Jet-Logistic</td>
-                            <td class="delivery-table__column">3-5 дней</td>
-                            <td class="delivery-table__column">20 000 ₸</td>
-                        </tr>
-                        <tr class="delivery-table__blue">
-                            <td class="delivery-table__column left">Атырау</td>
-                            <td class="delivery-table__column">Jet-Logistic</td>
-                            <td class="delivery-table__column">3-5 дней</td>
-                            <td class="delivery-table__column">20 000 ₸</td>
-                        </tr>
-                        <tr>
-                            <td class="delivery-table__column left">Усть-Каменогорск</td>
-                            <td class="delivery-table__column">Jet-Logistic</td>
-                            <td class="delivery-table__column">3-5 дней</td>
-                            <td class="delivery-table__column">20 000 ₸</td>
-                        </tr>
-                        <tr class="delivery-table__blue">
-                            <td class="delivery-table__column left">Тараз</td>
-                            <td class="delivery-table__column">Jet-Logistic</td>
-                            <td class="delivery-table__column">3-5 дней</td>
-                            <td class="delivery-table__column">20 000 ₸</td>
-                        </tr>
-                        <tr>
-                            <td class="delivery-table__column left">Талдыкорган</td>
-                            <td class="delivery-table__column">Jet-Logistic</td>
-                            <td class="delivery-table__column">3-5 дней</td>
-                            <td class="delivery-table__column">20 000 ₸</td>
-                        </tr>
-                        <tr class="delivery-table__blue">
-                            <td class="delivery-table__column left">Уральск</td>
-                            <td class="delivery-table__column">Jet-Logistic</td>
-                            <td class="delivery-table__column">3-5 дней</td>
-                            <td class="delivery-table__column">20 000 ₸</td>
-                        </tr>
-                        <tr>
-                            <td class="delivery-table__column left">Караганда</td>
-                            <td class="delivery-table__column">Jet-Logistic</td>
-                            <td class="delivery-table__column">3-5 дней</td>
-                            <td class="delivery-table__column">20 000 ₸</td>
-                        </tr>
-                        <tr class="delivery-table__blue">
-                            <td class="delivery-table__column left">Костанай</td>
-                            <td class="delivery-table__column">Jet-Logistic</td>
-                            <td class="delivery-table__column">3-5 дней</td>
-                            <td class="delivery-table__column">20 000 ₸</td>
-                        </tr>
-                        <tr>
-                            <td class="delivery-table__column left">Кызылорда</td>
-                            <td class="delivery-table__column">Jet-Logistic</td>
-                            <td class="delivery-table__column">3-5 дней</td>
-                            <td class="delivery-table__column">20 000 ₸</td>
-                        </tr>
-                        <tr class="delivery-table__blue">
-                            <td class="delivery-table__column left">Актау</td>
-                            <td class="delivery-table__column">Jet-Logistic</td>
-                            <td class="delivery-table__column">3-5 дней</td>
-                            <td class="delivery-table__column">20 000 ₸</td>
-                        </tr>
-                        <tr>
-                            <td class="delivery-table__column left">Павлодар</td>
-                            <td class="delivery-table__column">Jet-Logistic</td>
-                            <td class="delivery-table__column">3-5 дней</td>
-                            <td class="delivery-table__column">20 000 ₸</td>
-                        </tr>
-                        <tr class="delivery-table__blue">
-                            <td class="delivery-table__column left">Петропавловск</td>
-                            <td class="delivery-table__column">Jet-Logistic</td>
-                            <td class="delivery-table__column">3-5 дней</td>
-                            <td class="delivery-table__column">20 000 ₸</td>
-                        </tr>
-                        <tr>
-                            <td class="delivery-table__column left">Туркестан</td>
-                            <td class="delivery-table__column">Jet-Logistic</td>
-                            <td class="delivery-table__column">3-5 дней</td>
-                            <td class="delivery-table__column">20 000 ₸</td>
-                        </tr>
-                        <tr class="delivery-table__blue">
-                            <td class="delivery-table__column left">Жезказган</td>
-                            <td class="delivery-table__column">Jet-Logistic</td>
-                            <td class="delivery-table__column">3-5 дней</td>
-                            <td class="delivery-table__column">20 000 ₸</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="delivery-table__wrapper">
+        
+        
+                    <table class="delivery-table__table">
+                        <thead>
+                            <tr>
+                                <th class="delivery-table__header">Регион доставки</th>
+                                <th class="delivery-table__header">Транспортная компания</th>
+                                <th class="delivery-table__header">Срок доставки *</th>
+                                <th class="delivery-table__header">Стоимость доставки *</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="delivery-table__column left">Астана</td>
+                                <td class="delivery-table__column">Jet-Logistic</td>
+                                <td class="delivery-table__column">3-5 дней</td>
+                                <td class="delivery-table__column">20 000 ₸</td>
+                            </tr>
+                            <tr class="delivery-table__blue">
+                                <td class="delivery-table__column left">Алматы</td>
+                                <td class="delivery-table__column">Jet-Logistic</td>
+                                <td class="delivery-table__column">3-5 дней</td>
+                                <td class="delivery-table__column">20 000 ₸</td>
+                            </tr>
+                            <tr>
+                                <td class="delivery-table__column left">Шымкент</td>
+                                <td class="delivery-table__column">Jet-Logistic</td>
+                                <td class="delivery-table__column">3-5 дней</td>
+                                <td class="delivery-table__column">20 000 ₸</td>
+                            </tr>
+                            <tr class="delivery-table__blue">
+                                <td class="delivery-table__column left">Семей</td>
+                                <td class="delivery-table__column">Jet-Logistic</td>
+                                <td class="delivery-table__column">3-5 дней</td>
+                                <td class="delivery-table__column">20 000 ₸</td>
+                            </tr>
+                            <tr>
+                                <td class="delivery-table__column left">Кокшетау</td>
+                                <td class="delivery-table__column">Jet-Logistic</td>
+                                <td class="delivery-table__column">3-5 дней</td>
+                                <td class="delivery-table__column">20 000 ₸</td>
+                            </tr>
+                            <tr class="delivery-table__blue">
+                                <td class="delivery-table__column left">Актобе</td>
+                                <td class="delivery-table__column">Jet-Logistic</td>
+                                <td class="delivery-table__column">3-5 дней</td>
+                                <td class="delivery-table__column">20 000 ₸</td>
+                            </tr>
+                            <tr>
+                                <td class="delivery-table__column left">Конаев</td>
+                                <td class="delivery-table__column">Jet-Logistic</td>
+                                <td class="delivery-table__column">3-5 дней</td>
+                                <td class="delivery-table__column">20 000 ₸</td>
+                            </tr>
+                            <tr class="delivery-table__blue">
+                                <td class="delivery-table__column left">Атырау</td>
+                                <td class="delivery-table__column">Jet-Logistic</td>
+                                <td class="delivery-table__column">3-5 дней</td>
+                                <td class="delivery-table__column">20 000 ₸</td>
+                            </tr>
+                            <tr>
+                                <td class="delivery-table__column left">Усть-Каменогорск</td>
+                                <td class="delivery-table__column">Jet-Logistic</td>
+                                <td class="delivery-table__column">3-5 дней</td>
+                                <td class="delivery-table__column">20 000 ₸</td>
+                            </tr>
+                            <tr class="delivery-table__blue">
+                                <td class="delivery-table__column left">Тараз</td>
+                                <td class="delivery-table__column">Jet-Logistic</td>
+                                <td class="delivery-table__column">3-5 дней</td>
+                                <td class="delivery-table__column">20 000 ₸</td>
+                            </tr>
+                            <tr>
+                                <td class="delivery-table__column left">Талдыкорган</td>
+                                <td class="delivery-table__column">Jet-Logistic</td>
+                                <td class="delivery-table__column">3-5 дней</td>
+                                <td class="delivery-table__column">20 000 ₸</td>
+                            </tr>
+                            <tr class="delivery-table__blue">
+                                <td class="delivery-table__column left">Уральск</td>
+                                <td class="delivery-table__column">Jet-Logistic</td>
+                                <td class="delivery-table__column">3-5 дней</td>
+                                <td class="delivery-table__column">20 000 ₸</td>
+                            </tr>
+                            <tr>
+                                <td class="delivery-table__column left">Караганда</td>
+                                <td class="delivery-table__column">Jet-Logistic</td>
+                                <td class="delivery-table__column">3-5 дней</td>
+                                <td class="delivery-table__column">20 000 ₸</td>
+                            </tr>
+                            <tr class="delivery-table__blue">
+                                <td class="delivery-table__column left">Костанай</td>
+                                <td class="delivery-table__column">Jet-Logistic</td>
+                                <td class="delivery-table__column">3-5 дней</td>
+                                <td class="delivery-table__column">20 000 ₸</td>
+                            </tr>
+                            <tr>
+                                <td class="delivery-table__column left">Кызылорда</td>
+                                <td class="delivery-table__column">Jet-Logistic</td>
+                                <td class="delivery-table__column">3-5 дней</td>
+                                <td class="delivery-table__column">20 000 ₸</td>
+                            </tr>
+                            <tr class="delivery-table__blue">
+                                <td class="delivery-table__column left">Актау</td>
+                                <td class="delivery-table__column">Jet-Logistic</td>
+                                <td class="delivery-table__column">3-5 дней</td>
+                                <td class="delivery-table__column">20 000 ₸</td>
+                            </tr>
+                            <tr>
+                                <td class="delivery-table__column left">Павлодар</td>
+                                <td class="delivery-table__column">Jet-Logistic</td>
+                                <td class="delivery-table__column">3-5 дней</td>
+                                <td class="delivery-table__column">20 000 ₸</td>
+                            </tr>
+                            <tr class="delivery-table__blue">
+                                <td class="delivery-table__column left">Петропавловск</td>
+                                <td class="delivery-table__column">Jet-Logistic</td>
+                                <td class="delivery-table__column">3-5 дней</td>
+                                <td class="delivery-table__column">20 000 ₸</td>
+                            </tr>
+                            <tr>
+                                <td class="delivery-table__column left">Туркестан</td>
+                                <td class="delivery-table__column">Jet-Logistic</td>
+                                <td class="delivery-table__column">3-5 дней</td>
+                                <td class="delivery-table__column">20 000 ₸</td>
+                            </tr>
+                            <tr class="delivery-table__blue">
+                                <td class="delivery-table__column left">Жезказган</td>
+                                <td class="delivery-table__column">Jet-Logistic</td>
+                                <td class="delivery-table__column">3-5 дней</td>
+                                <td class="delivery-table__column">20 000 ₸</td>
+                            </tr>
+                        </tbody>
+                    </table>
+        
+                </div>
                 <p class="delivery-table__text">* Цены и сроки доставки указаны для базовой комплектации подъемника и
                     предварительного ознакомления, могут быть изменены в связи со сменой тарифов транспортных компаний,
                     изменений в габаритах и количестве подъемников. </p>
@@ -312,7 +317,9 @@
                 <div class="container blue-bg__container">
                     <div class="main-request__inner blue-bg__inner">
                         <div class="main-request__square blue-bg__square"></div>
-                        <img src="./assets/img/main/request.webp" alt="" class="main-request__img">
+                        <div class="main-request__img blue-bg__img">
+                            <img src="./assets/img/main/request.webp" alt="">
+                        </div>
                         <form action="/" class="form">
                             <input type="text" required name="text-input" id="" placeholder="Ваше имя">
                             <input type="tel" required name="tel-input" id="" placeholder="Ваш телефон">
@@ -327,8 +334,29 @@
                     </div>
                 </div>
             </div>
+        
+            <script src="./assets/js/request.js"></script>
         </section>    </div>
-    <footer class="footer">
+    <div class="popup" id="popup">
+        <a href="#header" class="popup_area"></a>
+        <div class="popup_body">
+            <div class="popup_content">
+                <h1 class="title">Оставить заявку</h1>
+                <form action="/" class="popup_form">
+                    <input required class="form_input" type="text" placeholder="Ваше имя">
+                    <input required class="form_input" type="tel" placeholder="Ваш телефон">
+                    <textarea placeholder="Ваш вопрос" class="form_textarea" name="Вопрос" id="question" cols="30"
+                        rows="5"></textarea>
+                    <div class="checkbox">
+                        <input type="checkbox" class="custom-checkbox" name="popup-checkbox" id="popup-checkbox"><label
+                            for="popup-checkbox">Согласен на обработку
+                            персональных данных</label>
+                    </div>
+                    <button disabled type="submit" id="popup-btn" class="btn popup_btn">Заказать звонок</button>
+                </form>
+            </div>
+        </div>
+    </div>    <footer class="footer">
         <div class="container">
             <div class="footer__inner">
                 <a href="./index.html"><img src="./assets/img/logo.svg" alt="Logo" class="logo"></a>
