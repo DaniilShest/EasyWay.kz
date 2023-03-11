@@ -1,6 +1,6 @@
 "use strict"
 
-const {src, dest} = require("gulp")
+const { src, dest } = require("gulp")
 const gulp = require("gulp")
 const autoprefixer = require("gulp-autoprefixer")
 const cssbeautify = require("gulp-cssbeautify");
@@ -36,14 +36,14 @@ const path = {
         css: srcPath + "assets/scss/*.scss",
         js: srcPath + "assets/js/*.js",
         images: srcPath + "assets/img/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}",
-        fonts:  srcPath + "assets/fonts/**/*.{eot,woff,woff2,ttf,svg}"
+        fonts: srcPath + "assets/fonts/**/*.{eot,woff,woff2,ttf,svg}"
     },
     watch: {
-        html:   srcPath + "**/*.html",
-        js:     srcPath + "assets/js/**/*.js",
-        css:    srcPath + "assets/scss/**/*.scss",
+        html: srcPath + "**/*.html",
+        js: srcPath + "assets/js/**/*.js",
+        css: srcPath + "assets/scss/**/*.scss",
         images: srcPath + "assets/img/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}",
-        fonts:  srcPath + "assets/fonts/**/*.{eot,woff,woff2,ttf,svg}"
+        fonts: srcPath + "assets/fonts/**/*.{eot,woff,woff2,ttf,svg}"
     },
     clean: "./" + distPath
 }
@@ -59,25 +59,25 @@ function serve() {
 
 function html() {
     panini.refresh()
-    return src(path.src.html, {base: srcPath})
+    return src(path.src.html, { base: srcPath })
         .pipe(plumber())
         .pipe(panini({
             root: srcPath,
             layouts: srcPath + "tpl/layouts/",
             partials: srcPath + "tpl/partials/",
             data: srcPath + "tpl/data/"
-          }))
+        }))
         .pipe(dest(path.build.html))
-        .pipe(browserSync.reload({stream: true}));
+        .pipe(browserSync.reload({ stream: true }));
 }
 
 function css() {
-    return src(path.src.css, {base: srcPath + "assets/scss/"})
+    return src(path.src.css, { base: srcPath + "assets/scss/" })
         .pipe(plumber({
-            errorHandler : function(err) {
+            errorHandler: function (err) {
                 notify.onError({
-                    title:    "SCSS Error",
-                    message:  "Error: <%= error.message %>"
+                    title: "SCSS Error",
+                    message: "Error: <%= error.message %>"
                 })(err);
                 this.emit('end');
             }
@@ -98,16 +98,16 @@ function css() {
             extname: ".css"
         }))
         .pipe(dest(path.build.css))
-        .pipe(browserSync.reload({stream: true}));
+        .pipe(browserSync.reload({ stream: true }));
 }
 
 function js() {
-    return src(path.src.js, {base: srcPath + "assets/js/"})
+    return src(path.src.js, { base: srcPath + "assets/js/" })
         .pipe(plumber({
-            errorHandler : function(err) {
+            errorHandler: function (err) {
                 notify.onError({
-                    title:    "JS Error",
-                    message:  "Error: <%= error.message %>"
+                    title: "JS Error",
+                    message: "Error: <%= error.message %>"
                 })(err);
                 this.emit('end');
             }
@@ -120,36 +120,36 @@ function js() {
             extname: ".js"
         }))
         .pipe(dest(path.build.js))
-        .pipe(browserSync.reload({stream: true}));
+        .pipe(browserSync.reload({ stream: true }));
 }
 
 function images() {
-    return src(path.src.images, {base: srcPath + "assets/img/"})
+    return src(path.src.images, { base: srcPath + "assets/img/" })
         .pipe(imagemin([
-            imagemin.gifsicle({interlaced: true}),
-            imagemin.mozjpeg({quality: 75, progressive: true}),
-            imagemin.optipng({optimizationLevel: 5}),
+            imagemin.gifsicle({ interlaced: true }),
+            imagemin.mozjpeg({ quality: 90, progressive: true }),
+            imagemin.optipng({ optimizationLevel: 5 }),
             imagemin.svgo({
                 plugins: [
-                    {removeViewBox: true},
-                    {cleanupIDs: false}
+                    { removeViewBox: true },
+                    { cleanupIDs: false }
                 ]
             })
         ]))
         .pipe(dest(path.build.images))
-        .pipe(browserSync.reload({stream: true}));
+        .pipe(browserSync.reload({ stream: true }));
 }
 
 function webpImages() {
-    return src(path.src.images, {base: srcPath + "assets/img/"})
+    return src(path.src.images, { base: srcPath + "assets/img/" })
         .pipe(imagewebp())
         .pipe(dest(path.build.images))
 }
 
 function fonts() {
-    return src(path.src.fonts, {base: srcPath + "assets/fonts/"})
-    .pipe(dest(path.build.fonts))
-    .pipe(browserSync.reload({stream: true}));
+    return src(path.src.fonts, { base: srcPath + "assets/fonts/" })
+        .pipe(dest(path.build.fonts))
+        .pipe(browserSync.reload({ stream: true }));
 }
 
 function clean() {
