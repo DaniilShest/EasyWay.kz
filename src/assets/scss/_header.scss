@@ -1,0 +1,217 @@
+@import "variables";
+
+.header {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    left: 0;
+    margin: 0 auto;
+    font-weight: 700;
+    background: #FFF;
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 0;
+        border-bottom: 1px solid $borderlight;
+        position: relative;
+    }
+
+    &__contacts {
+        display: flex;
+        align-items: center;
+    }
+
+    &__contact {
+        margin-right: 45px;
+        font-size: 18px;
+        font-weight: 700;
+
+        &:last-child {
+            margin-right: 0px;
+        }
+
+        @media (max-width: 1000px) {
+            display: none;
+        }
+    }
+
+    &__bottom {
+        padding: 10px 0;
+
+        @media (max-width: 1000px) {
+            display: none;
+        }
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    &__link {
+        font-size: 18px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+
+        a {
+            position: relative;
+            /*задаём цвет ссылки*/
+            cursor: pointer;
+            line-height: 1.1;
+            /*задаём высоту строки*/
+            text-decoration: none;
+            /*убираем подчёркивание*/
+
+
+            &:after {
+                display: block;
+                position: absolute;
+                left: 0;
+                /*изменить на right:0;, чтобы изменить направление подчёркивания */
+                width: 0;
+                /*задаём длинну линии до наведения курсора*/
+                height: 2px;
+                /*задаём ширину линии*/
+                background-color: $primary;
+                /*задаём цвет линии*/
+                content: "";
+                transition: width 0.2s ease-out;
+                /*задаём время анимации*/
+            }
+
+            &:hover:after,
+            &:focus:after {
+                width: 100%;
+                /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+            }
+        }
+
+        img {
+            width: 13px;
+            height: 8px;
+            margin-left: 5px;
+        }
+    }
+}
+
+.hamburger-menu {
+    display: none;
+
+    @media (max-width: 1000px) {
+        display: block;
+    }
+}
+
+#menu__toggle {
+    opacity: 0;
+    display: none;
+}
+
+#menu__toggle:checked~.menu__btn>span {
+    transform: rotate(45deg);
+}
+
+#menu__toggle:checked~.menu__btn>span::before {
+    top: 0;
+    transform: rotate(0);
+}
+
+#menu__toggle:checked~.menu__btn>span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu__toggle:checked~.menu__box {
+    visibility: visible;
+    right: 0;
+}
+
+.menu__btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+
+    cursor: pointer;
+    z-index: 3000;
+}
+
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
+    display: block;
+    position: absolute;
+
+    width: 100%;
+    height: 3px;
+    border-radius: 1px;
+
+    background-color: $primary;
+
+    transition-duration: .25s;
+}
+
+.menu__btn>span::before {
+    content: '';
+    top: -8px;
+}
+
+.menu__btn>span::after {
+    content: '';
+    top: 8px;
+}
+
+.menu__box {
+    display: block;
+    position: fixed;
+    z-index: 2000;
+    visibility: hidden;
+    top: 0;
+    right: -100%;
+
+    width: 300px;
+    height: 100%;
+
+    margin: 0;
+    padding: 80px 0 !important;
+
+    list-style: none;
+
+    background-color: #FFF;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+
+    transition-duration: .25s;
+}
+
+.menu__item {
+    display: block;
+    padding: 12px 24px;
+
+    color: $dark;
+    font-size: 20px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition-duration: .25s;
+
+    &.blue {
+        background-color: $primary;
+        color: #FFF;
+    }
+}
+
+.menu__item:hover {
+    background-color: $primary;
+    color: #FFF;
+}
