@@ -65,27 +65,27 @@ const formSteps = [
         title: 'Высота подъема',
         options: [
             {
-                title: 'Высота подъема до 1 метра',
+                title: 'до 1 метра',
                 data: 0,
                 img: './assets/img/item/1.webp'
             },
             {
-                title: 'Высота подъема до 1,5 метров',
+                title: 'до 1,5 метров',
                 data: 0,
                 img: './assets/img/item/2.webp'
             },
             {
-                title: 'Высота подъема до 2 метров',
+                title: 'до 2 метров',
                 data: 0,
                 img: './assets/img/item/3.webp'
             },
             {
-                title: 'Высота подъема до 2,5 метров',
+                title: 'до 2,5 метров',
                 data: 50000,
                 img: './assets/img/item/4.webp'
             },
             {
-                title: 'Высота подъема до 3 метров',
+                title: 'до 3 метров',
                 data: 50000,
                 img: './assets/img/item/5.webp'
             }
