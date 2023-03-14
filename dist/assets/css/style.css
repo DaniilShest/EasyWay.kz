@@ -227,6 +227,7 @@ body.lock {
 
 .btn-icon:hover svg path {
     fill: #FFF;
+    stroke: #FFF;
 }
 
 .btn-icon:hover svg rect {
