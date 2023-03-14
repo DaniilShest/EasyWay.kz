@@ -158,34 +158,7 @@
     }
 
     &__calc {
-        position: relative;
-
-        svg {
-            position: absolute;
-            top: 50%;
-            left: 10px;
-            transform: translateY(-50%);
-            width: 30px;
-            height: 30px;
-
-            path {
-                transition: all .2s ease;
-            }
-        }
-
-        span {
-            position: relative;
-            left: 18px;
-            transition: all .1s ease;
-        }
-
-        &:hover {
-            svg {
-                path {
-                    fill: #FFF;
-                }
-            }
-        }
+        max-width: 360px;
     }
 }
 

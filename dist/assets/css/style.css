@@ -96,9 +96,9 @@ body.lock {
 }
 
 .container {
-    max-width: 1240px;
+    max-width: 1280px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 30px;
 }
 
 .title {
@@ -189,6 +189,48 @@ body.lock {
     background-color: #F4F2F2;
     color: #727272;
     border: 2px solid transparent;
+}
+
+.btn-icon {
+    position: relative;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.btn-icon:last-child {
+    margin-bottom: 0;
+}
+
+.btn-icon svg {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+}
+
+.btn-icon svg path {
+    transition: all 0.2s ease;
+}
+
+.btn-icon svg rect {
+    transition: all 0.2s ease;
+}
+
+.btn-icon span {
+    position: relative;
+    left: 18px;
+    transition: all 0.1s ease;
+}
+
+.btn-icon:hover svg path {
+    fill: #FFF;
+}
+
+.btn-icon:hover svg rect {
+    stroke: #FFF;
 }
 
 .square-bg {
@@ -460,8 +502,13 @@ body.lock {
     margin-bottom: 40px;
 }
 
+.menu__item.contact {
+    text-align: center;
+}
+
 .menu__item.btn {
-    margin-left: 20px;
+    margin: 0 auto;
+    margin-top: 12px;
     max-width: 280px;
     color: #FFF;
     text-align: center;
@@ -1160,6 +1207,7 @@ textarea {
 
 .catalog__filters {
     width: 380px;
+    margin-right: 40px;
 }
 
 .catalog__filter {
@@ -1331,30 +1379,7 @@ textarea {
 }
 
 .item-info__calc {
-    position: relative;
-}
-
-.item-info__calc svg {
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-    width: 30px;
-    height: 30px;
-}
-
-.item-info__calc svg path {
-    transition: all 0.2s ease;
-}
-
-.item-info__calc span {
-    position: relative;
-    left: 18px;
-    transition: all 0.1s ease;
-}
-
-.item-info__calc:hover svg path {
-    fill: #FFF;
+    max-width: 360px;
 }
 
 .item-why__title {
@@ -1922,6 +1947,7 @@ textarea {
 
 .contacts-main__map {
     width: 500px;
+    height: 560px;
     padding: 30px 0;
     position: relative;
 }

@@ -218,8 +218,13 @@
         margin-bottom: 40px;
     }
 
+    &.contact {
+        text-align: center;
+    }
+
     &.btn {
-        margin-left: 20px;
+        margin: 0 auto;
+        margin-top: 12px;
         max-width: 280px;
         color: #FFF;
         text-align: center;
