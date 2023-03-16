@@ -19,10 +19,21 @@
                                 alt="Logo" class="logo"></a>
                     </li>
                     <li>
-                        <a class="menu__item" href="./about.html">Информация</a>
+                        <button class="menu__item accordion">Информация</button>
+                        <div class="panel">
+                            <a class="menu__item" href="./about.html">О компании</a>
+                            <a class="menu__item" href="#">Вакансии</a>
+                        </div>
                     </li>
                     <li>
-                        <a class="menu__item" href="./catalog.html">Подъемники для инвалидов</a>
+                        <button class="menu__item accordion">Подъемкники для инвалидов</button>
+                        <div class="panel">
+                            <a class="menu__item" href="./catalog.html">Все подъемники</a>
+                            <a class="menu__item" href="#">Вертикальные</a>
+                            <a class="menu__item" href="#">Наклонные</a>
+                            <a class="menu__item" href="#">Передвежные</a>
+                            <a class="menu__item" href="#">Лестничные</a>
+                        </div>
                     </li>
                     <li><a class="menu__item" href="./delivery.html">Доставка</a></li>
                     <li><a class="menu__item" href="./service.html">Монтаж и сервис</a></li>
@@ -38,11 +49,27 @@
         <div class="header__bottom">
             <nav>
                 <ul class="header__links">
-                    <li class="header__link"><a href="./about.html">Информация</a><img
-                            src="./assets/img/header/arrow.svg" alt="">
+                    <li class="header__link">
+                        <div class="dropdown">
+                            <a href="#">Информация <img src="./assets/img/header/arrow.svg" alt=""></a>
+                            <div class="dropdown-content">
+                                <a href="./about.html">О компании</a>
+                                <a href="#">Вакансии</a>
+                            </div>
+                        </div>
                     </li>
-                    <li class="header__link"><a href="./catalog.html">Подъемники для инвалидов</a><img
-                            src="./assets/img/header/arrow.svg" alt=""></li>
+                    <li class="header__link">
+                        <div class="dropdown">
+                            <a href="#">Подъемники для инвалидов <img src="./assets/img/header/arrow.svg" alt=""></a>
+                            <div class="dropdown-content">
+                                <a href="./catalog.html">Все подъемники</a>
+                                <a href="#">Вертикальные</a>
+                                <a href="#">Наклонные</a>
+                                <a href="#">Передвежные</a>
+                                <a href="#">Лестничные</a>
+                            </div>
+                        </div>
+                    </li>
                     <li class="header__link"><a href="./delivery.html">Доставка</a></li>
                     <li class="header__link"><a href="./service.html">Монтаж и сервис</a></li>
                     <li class="header__link"><a href="#">Наши объекты</a></li>
