@@ -58,6 +58,10 @@
 
         &.with-bottom {
             margin-bottom: 10px;
+
+            @media (max-width: 500px) {
+                margin-bottom: 0px;
+            }
         }
 
         &.light {
@@ -65,7 +69,7 @@
         }
 
         @media (max-width: 1000px) {
-            margin-bottom: 15px;
+            margin-bottom: 20px;
 
             @media (max-width: 500px) {
                 font-size: 20px;
