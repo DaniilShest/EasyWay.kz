@@ -1948,6 +1948,13 @@ textarea {
     }
 }
 
+@media (max-width: 1000px) and (max-width: 620px) {
+    .contacts-main__map {
+        height: 400px;
+        padding-top: 0;
+    }
+}
+
 .footer {
     background-color: #F6F6F6;
     font-size: 16px;
@@ -1975,6 +1982,12 @@ textarea {
 @media (max-width: 890px) {
     .footer__inner {
         display: block;
+    }
+}
+
+@media (max-width: 890px) and (max-width: 620px) {
+    .footer__inner {
+        padding-bottom: 0;
     }
 }
 
