@@ -21,6 +21,10 @@
 
         @media (max-width: 890px) {
             display: block;
+
+            @media (max-width: 620px) {
+                padding-bottom: 0;
+            }
         }
     }
 
