@@ -149,7 +149,7 @@ body.lock {
 .btn {
     background-color: #0769CD;
     padding: 11px 31px;
-    border: 2px solid #0769CD;
+    border: 3px solid #0769CD;
     color: #FFF;
     border-radius: 5px;
     transition: all 0.2s ease;
@@ -162,18 +162,18 @@ body.lock {
 .btn:disabled {
     background-color: #F4F2F2;
     color: #727272;
-    border: 2px solid transparent;
+    border: 3px solid transparent;
 }
 
 .btn:disabled:hover {
     cursor: default;
     background-color: #F4F2F2;
     color: #727272;
-    border: 2px solid transparent;
+    border: 3px solid transparent;
 }
 
 .btn:hover {
-    border: 2px solid #0769CD;
+    border: 3px solid #0769CD;
     background: transparent;
     color: #0769CD;
 }
@@ -181,7 +181,7 @@ body.lock {
 .btn-light {
     font-weight: 500;
     font-size: 20px;
-    border: 2px solid #0769CD;
+    border: 3px solid #0769CD;
     color: #0769CD;
     border-radius: 5px;
     padding: 11px 41px;
@@ -198,14 +198,14 @@ body.lock {
 .btn-light:disabled {
     background-color: #F4F2F2;
     color: #727272;
-    border: 2px solid transparent;
+    border: 3px solid transparent;
 }
 
 .btn-light:disabled:hover {
     cursor: default;
     background-color: #F4F2F2;
     color: #727272;
-    border: 2px solid transparent;
+    border: 3px solid transparent;
 }
 
 .btn-icon {
