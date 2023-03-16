@@ -45,6 +45,10 @@
     border-radius: 5px;
     position: relative;
     overflow: auto;
+
+    @media (max-width: 600px) {
+        padding: 20px;
+    }
 }
 
 .popup_content_politic {
@@ -93,6 +97,11 @@
         background-color: #F4F2F2;
         color: #727272;
     }
+
+    @media (max-width: 600px) {
+        margin: 0;
+        width: 100%;
+    }
 }
 
 .checkbox {
@@ -112,6 +121,10 @@
     user-select: none;
 
     cursor: pointer;
+
+    @media (max-width: 600px) {
+        font-size: 14px;
+    }
 }
 
 .custom-checkbox+label::before {
