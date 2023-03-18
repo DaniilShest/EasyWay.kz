@@ -1,16 +1,25 @@
 @import "variables";
 
 .breadcrumbs {
-    padding: 20px 0;
+    // padding: 20px 0;
 
     @media (max-width: 1000px) {
         padding-bottom: 0;
+    }
+
+    .container {
+        position: relative;
     }
 
     &__items {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
+
+        position: absolute;
+        top: 0;
+        left: 30px;
+        z-index: 2;
     }
 
     &__item {
