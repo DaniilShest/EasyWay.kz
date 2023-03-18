@@ -659,20 +659,24 @@ body.lock {
     transition: max-height 0.2s ease-out;
 }
 
-.breadcrumbs {
-    padding: 20px 0;
-}
-
 @media (max-width: 1000px) {
     .breadcrumbs {
         padding-bottom: 0;
     }
 }
 
+.breadcrumbs .container {
+    position: relative;
+}
+
 .breadcrumbs__items {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    z-index: 2;
 }
 
 .breadcrumbs__item {
@@ -1480,6 +1484,10 @@ textarea {
     width: 100%;
 }
 
+.catalog {
+    margin-bottom: 40px;
+}
+
 .catalog__inner {
     display: flex;
     align-items: flex-start;
@@ -1805,7 +1813,7 @@ textarea {
 
 .item-constuctor__form {
     flex: 1 1 auto;
-    height: 570px;
+    height: 580px;
     display: flex;
     flex-direction: column;
 }
