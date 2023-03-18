@@ -126,10 +126,6 @@ body.lock {
     background: #F3F9FF;
 }
 
-.first-section {
-    padding: 10px 0;
-}
-
 .logo {
     width: 250px;
 }
@@ -673,10 +669,6 @@ body.lock {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    position: absolute;
-    top: 0;
-    left: 30px;
-    z-index: 2;
 }
 
 .breadcrumbs__item {
@@ -706,6 +698,7 @@ body.lock {
 }
 
 .main-slider {
+    margin-top: 24px;
     color: #101010;
 }
 
@@ -1482,10 +1475,6 @@ textarea {
     text-align: center;
     display: block;
     width: 100%;
-}
-
-.catalog {
-    margin-bottom: 40px;
 }
 
 .catalog__inner {
