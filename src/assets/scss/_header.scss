@@ -14,7 +14,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 15px 0;
+        padding: 17px 0;
         border-bottom: 1px solid $borderlight;
         position: relative;
     }
@@ -39,7 +39,7 @@
     }
 
     &__bottom {
-        padding: 10px 0;
+        padding: 12px 0;
 
         @media (max-width: 1000px) {
             display: none;
@@ -264,8 +264,10 @@
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     padding: 20px;
+    margin-top: 10px;
+    color: $primary;
     position: absolute;
-    background-color: #FFF;
+    background-color: $lightbg;
     border-radius: 10px;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
