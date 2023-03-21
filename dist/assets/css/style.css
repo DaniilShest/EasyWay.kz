@@ -127,7 +127,7 @@ body.lock {
 }
 
 .logo {
-    width: 250px;
+    width: 260px;
 }
 
 @media (max-width: 1000px) {
@@ -156,15 +156,15 @@ body.lock {
 }
 
 .btn:disabled {
-    background-color: #F4F2F2;
-    color: #727272;
+    background-color: #F6F6F6;
+    color: #707070;
     border: 3px solid transparent;
 }
 
 .btn:disabled:hover {
     cursor: default;
-    background-color: #F4F2F2;
-    color: #727272;
+    background-color: #F6F6F6;
+    color: #707070;
     border: 3px solid transparent;
 }
 
@@ -192,15 +192,15 @@ body.lock {
 }
 
 .btn-light:disabled {
-    background-color: #F4F2F2;
-    color: #727272;
+    background-color: #F6F6F6;
+    color: #707070;
     border: 3px solid transparent;
 }
 
 .btn-light:disabled:hover {
     cursor: default;
-    background-color: #F4F2F2;
-    color: #727272;
+    background-color: #F6F6F6;
+    color: #707070;
     border: 3px solid transparent;
 }
 
@@ -2083,6 +2083,7 @@ textarea {
 }
 
 .footer .logo {
+    margin-top: 5px;
     margin-right: 50px;
 }
 

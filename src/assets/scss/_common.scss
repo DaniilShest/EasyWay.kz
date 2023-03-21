@@ -41,7 +41,7 @@ body {
 }
 
 .logo {
-    width: 250px;
+    width: 260px;
 
     @media (max-width: 1000px) {
         width: 230px;
@@ -65,14 +65,14 @@ body {
     cursor: pointer;
 
     &:disabled {
-        background-color: #F4F2F2;
-        color: #727272;
+        background-color: $lightgray;
+        color: $gray;
         border: 3px solid transparent;
 
         &:hover {
             cursor: default;
-            background-color: #F4F2F2;
-            color: #727272;
+            background-color: $lightgray;
+            color: $gray;
             border: 3px solid transparent;
         }
     }
@@ -103,14 +103,14 @@ body {
     }
 
     &:disabled {
-        background-color: #F4F2F2;
-        color: #727272;
+        background-color: $lightgray;
+        color: $gray;
         border: 3px solid transparent;
 
         &:hover {
             cursor: default;
-            background-color: #F4F2F2;
-            color: #727272;
+            background-color: $lightgray;
+            color: $gray;
             border: 3px solid transparent;
         }
     }
