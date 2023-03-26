@@ -21,6 +21,15 @@ const itemSlider = new Swiper('.item__slider', {
     }
 });
 
+const itemImgs = document.getElementsByClassName('item-imgs')
+
+for (let i = 0; i < itemImgs.length; i++) {
+    const element = itemImgs[i];
+    lightGallery(element, {
+        thumbnail: true
+    });
+}
+
 const step = document.getElementById('item-constuctor-step')
 const next = document.getElementById('item-constuctor-next')
 const prev = document.getElementById('item-constuctor-prev')

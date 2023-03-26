@@ -17,559 +17,577 @@
     <title></title></head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header__top">
-                <a href="./index.html"><img src="./assets/img/header/logo.svg" alt="Logo" class="logo"></a>
-                <div class="header__contacts">
-                    <div class="header__contact"><a href="mailto:zakaz@easyway.kz">zakaz@easyway.kz</a></div>
-                    <div class="header__contact"><a href="tel:77077895550">8 (707) 789-55-50</a></div>
-                    <div class="header__contact"><a class="header__btn btn" href="#popup">Заказать звонок</a></div>
+    <div class="body__wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__top">
+                    <a href="./index.html"><img src="./assets/img/header/logo.svg" alt="Logo" class="logo"></a>
+                    <div class="header__contacts">
+                        <div class="header__contact"><a href="mailto:zakaz@easyway.kz">zakaz@easyway.kz</a></div>
+                        <div class="header__contact"><a href="tel:77077895550">8 (707) 789-55-50</a></div>
+                        <div class="header__contact"><a class="header__btn btn" href="#popup">Заказать звонок</a></div>
+                    </div>
+                    <div class="hamburger-menu">
+                        <input id="menu__toggle" type="checkbox" />
+                        <label class="menu__btn" for="menu__toggle">
+                            <span></span>
+                        </label>
+        
+                        <ul class="menu__box">
+                            <li>
+                                <a href="./index.html" class="menu__item logo"><img src="./assets/img/header/logo.svg"
+                                        alt="Logo" class="logo"></a>
+                            </li>
+                            <li>
+                                <button class="menu__item accordion">Информация</button>
+                                <div class="panel">
+                                    <a class="menu__item" href="./about.html">О компании</a>
+                                    <a class="menu__item" href="./articles.html">Статьи</a>
+                                    <a class="menu__item" href="./careers.html">Вакансии</a>
+                                </div>
+                            </li>
+                            <li>
+                                <button class="menu__item accordion">Подъемкники для инвалидов</button>
+                                <div class="panel">
+                                    <a class="menu__item" href="./catalog.html">Все подъемники</a>
+                                    <a class="menu__item" href="#">Вертикальные</a>
+                                    <a class="menu__item" href="#">Наклонные</a>
+                                    <a class="menu__item" href="#">Передвежные</a>
+                                    <a class="menu__item" href="#">Лестничные</a>
+                                </div>
+                            </li>
+                            <li><a class="menu__item" href="./delivery.html">Доставка</a></li>
+                            <li><a class="menu__item" href="./service.html">Монтаж и сервис</a></li>
+                            <li><a class="menu__item" href="./objects.html">Наши объекты</a></li>
+                            <li><a class="menu__item margin-bottom" href="./contact.html">Контакты</a></li>
+                            <div class="menu__item contact"><a href="mailto:zakaz@easyway.kz">zakaz@easyway.kz</a></div>
+                            <div class="menu__item contact"><a href="tel:77077895550">8 (707) 789-55-50</a></div>
+                            <div class="menu__item btn"><a href="#popup">Заказать звонок</a>
+                            </div>
+                        </ul>
+                    </div>
                 </div>
-                <div class="hamburger-menu">
-                    <input id="menu__toggle" type="checkbox" />
-                    <label class="menu__btn" for="menu__toggle">
-                        <span></span>
-                    </label>
-    
-                    <ul class="menu__box">
-                        <li>
-                            <a href="./index.html" class="menu__item logo"><img src="./assets/img/header/logo.svg"
-                                    alt="Logo" class="logo"></a>
-                        </li>
-                        <li>
-                            <button class="menu__item accordion">Информация</button>
-                            <div class="panel">
-                                <a class="menu__item" href="./about.html">О компании</a>
-    
-                                <a href="./articles.html">Статьи</a>
-                                <a class="menu__item" href="#">Вакансии</a>
-                            </div>
-                        </li>
-                        <li>
-                            <button class="menu__item accordion">Подъемкники для инвалидов</button>
-                            <div class="panel">
-                                <a class="menu__item" href="./catalog.html">Все подъемники</a>
-                                <a class="menu__item" href="#">Вертикальные</a>
-                                <a class="menu__item" href="#">Наклонные</a>
-                                <a class="menu__item" href="#">Передвежные</a>
-                                <a class="menu__item" href="#">Лестничные</a>
-                            </div>
-                        </li>
-                        <li><a class="menu__item" href="./delivery.html">Доставка</a></li>
-                        <li><a class="menu__item" href="./service.html">Монтаж и сервис</a></li>
-                        <li><a class="menu__item" href="#">Наши объекты</a></li>
-                        <li><a class="menu__item margin-bottom" href="./contact.html">Контакты</a></li>
-                        <div class="menu__item contact"><a href="mailto:zakaz@easyway.kz">zakaz@easyway.kz</a></div>
-                        <div class="menu__item contact"><a href="tel:77077895550">8 (707) 789-55-50</a></div>
-                        <div class="menu__item btn"><a href="#popup">Заказать звонок</a>
-                        </div>
-                    </ul>
+                <div class="header__bottom">
+                    <nav>
+                        <ul class="header__links">
+                            <li class="header__link">
+                                <div class="dropdown">
+                                    <a href="#">Информация <img src="./assets/img/header/arrow.svg" alt=""></a>
+                                    <div class="dropdown-content">
+                                        <a href="./about.html">О компании</a>
+                                        <a href="./articles.html">Статьи</a>
+                                        <a href="./careers.html">Вакансии</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header__link">
+                                <div class="dropdown">
+                                    <a href="./catalog.html">Подъемники для инвалидов <img src="./assets/img/header/arrow.svg"
+                                            alt=""></a>
+                                    <div class="dropdown-content">
+                                        <a href="#">Вертикальные</a>
+                                        <a href="#">Наклонные</a>
+                                        <a href="#">Передвежные</a>
+                                        <a href="#">Лестничные</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header__link"><a href="./delivery.html">Доставка</a></li>
+                            <li class="header__link"><a href="./service.html">Монтаж и сервис</a></li>
+                            <li class="header__link"><a href="./objects.html">Наши объекты</a></li>
+                            <li class="header__link"><a href="./contact.html">Контакты</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
-            <div class="header__bottom">
-                <nav>
-                    <ul class="header__links">
-                        <li class="header__link">
-                            <div class="dropdown">
-                                <a href="#">Информация <img src="./assets/img/header/arrow.svg" alt=""></a>
-                                <div class="dropdown-content">
-                                    <a href="./about.html">О компании</a>
-                                    <a href="./articles.html">Статьи</a>
-                                    <a href="./careers.html">Вакансии</a>
+        </header>        <main class="main">
+            <div class="wrapper">
+                <div class="breadcrumbs">
+                    <div class="container">
+                        <ul class="breadcrumbs__items">
+                            <li class="breadcrumbs__item">
+                                <a href="../index.html">Главная</a> <img src="./assets/img/breadcrumbs/vector.svg" alt="">
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <section class="section first-section catalog">
+                    <div class="container">
+                        <h1 class="title">Подъемники для инвалидов</h1>
+                        <div class="catalog__inner">
+                            <div class="catalog__filters">
+                                <button class="btn-light btn-icon">
+                                    <svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="23" y="24" width="453" height="453" rx="50" stroke="#0769CD" stroke-width="40" />
+                                        <path
+                                            d="M206.186 292.428C203.297 257.407 203.405 223.453 205.899 189.589C207.342 169.997 219.424 159.92 237.457 160.649C254.009 161.317 265.31 172.934 266.549 191.451C267.205 201.243 267.188 211.134 266.649 220.935C266.127 230.424 270.106 233.724 279.252 233.228C288.61 232.719 298.021 233 307.404 233.174C321.743 233.438 329.622 239.077 329.892 248.983C330.173 259.273 321.742 265.795 307.06 266.204C297.681 266.465 288.287 266.131 278.903 266.269C274.66 266.332 269.805 265.411 267.496 270.544C268.868 277.47 274.206 275.822 278.253 275.891C291.659 276.116 305.074 276.162 318.479 275.93C329.46 275.741 337.223 280.202 342.199 290.085C355.859 317.216 369.881 344.165 383.406 371.362C390.318 385.261 387.25 396.807 376.034 402.392C364.645 408.063 353.355 403.654 346.409 390.276C335.706 369.66 325.073 348.999 314.926 328.106C311.308 320.655 306.466 317.658 298.191 317.834C278.98 318.24 259.751 318.047 240.534 317.789C221.988 317.54 213.357 311.24 206.186 292.428Z"
+                                            fill="#0769CD" />
+                                        <path
+                                            d="M305.817 347.522C310.68 355.737 309.905 362.379 305.461 369.711C283.205 406.427 238.825 426.51 197.455 418.097C151.653 408.782 119.542 374.403 112.886 327.556C107.112 286.915 130.035 242.852 167.576 223.989C173.451 221.037 180.314 212.708 187.587 220.889C192.675 226.614 188.191 248.408 181.693 252.488C162.604 264.474 150.049 280.65 145.748 303.268C138.752 340.054 164.009 378.389 200.753 385.818C234.157 392.57 264.599 377.773 281.183 346.868C283.778 342.033 284.445 335.39 292.256 335.071C300.535 334.733 302.088 341.484 305.817 347.522Z"
+                                            fill="#0769CD" />
+                                        <path
+                                            d="M264.733 132.35C247.652 152.046 225.413 154.136 210.996 138.227C198.658 124.611 197.762 106.924 208.71 93.0566C218.699 80.4037 236.478 76.3805 250.966 83.4947C266.246 90.9981 273.479 108.437 268.254 125.471C267.609 127.573 266.311 129.474 264.733 132.35Z"
+                                            fill="#0769CD" />
+                                    </svg>
+                                    <a href="">
+                                        <span> Все подъемники
+                                        </span></a></button>
+                                <button class="btn-light btn-icon">
+                                    <svg width="493" height="493" viewBox="0 0 493 493" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M302.773 146.647C321.889 165.76 340.424 184.309 358.997 202.823C370.06 213.85 370.311 223.545 359.72 234.286C346.412 247.78 337.892 248.565 325.826 236.818C310.846 222.236 296.192 207.318 281.265 192.68C278.724 190.189 276.912 186.3 272.231 186.495C269.629 190.343 270.881 194.629 270.873 198.631C270.758 253.692 270.732 308.754 270.804 363.816C270.816 372.408 271.065 381.346 261.704 385.299C251.985 389.405 241.541 389.493 231.899 384.874C223.843 381.016 223.476 373.115 223.489 365.213C223.582 309.772 223.544 254.331 223.548 198.888C223.548 194.388 223.548 189.888 223.548 183.387C210.76 192.72 202.142 203.68 192.13 213.084C183.27 221.406 175.143 230.514 166.17 238.705C155.767 248.201 147.437 247.03 135.606 235.37C124.732 224.654 123.288 215.421 132.846 205.708C166.167 171.846 199.793 138.277 233.661 104.96C243.043 95.7308 251.646 96.2965 261.732 105.929C275.472 119.052 288.739 132.666 302.773 146.647Z"
+                                            fill="#0769CD" />
+                                        <rect x="20" y="20" width="453" height="453" rx="50" stroke="#0769CD" stroke-width="40" />
+                                    </svg>
+                
+                
+                                    <a href="">
+                                        <span> Вертикальные
+                                        </span></a></button>
+                                <button class="btn-light btn-icon">
+                                    <svg width="493" height="493" viewBox="0 0 493 493" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M356.892 215.102C356.894 242.133 356.884 268.356 356.926 294.58C356.951 310.2 350.274 317.233 335.19 317.339C316.238 317.471 309.658 312.001 309.432 295.163C309.151 274.259 309.338 253.349 309.133 232.443C309.098 228.885 310.567 224.854 307.119 221.682C302.558 222.563 300.413 226.479 297.577 229.303C258.562 268.156 219.608 307.072 180.725 346.058C174.658 352.142 168.514 358.638 159.099 354.814C149.324 350.845 141.877 343.522 138.325 333.438C135.356 325.013 140.683 319.167 146.28 313.589C185.549 274.452 224.725 235.222 263.931 196.021C267.113 192.839 270.295 189.657 274.892 185.06C259.25 182.617 245.407 184.273 231.677 183.843C219.528 183.462 207.341 184.156 195.204 183.603C181.133 182.962 176.071 176.244 175.95 159.633C175.839 144.367 181.346 136.817 194.973 136.707C242.479 136.325 289.993 136.365 337.5 136.755C350.66 136.863 356.343 143.346 356.664 157.289C357.1 176.284 356.855 195.292 356.892 215.102Z"
+                                            fill="#0769CD" />
+                                        <rect x="20" y="20" width="453" height="453" rx="50" stroke="#0769CD" stroke-width="40" />
+                                    </svg>
+                
+                
+                                    <a href="">
+                                        <span> Наклонные
+                                        </span></a></button>
+                                <button class="btn-light btn-icon">
+                                    <svg width="493" height="493" viewBox="0 0 493 493" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M346.752 301.773C327.64 320.889 309.09 339.424 290.577 357.997C279.549 369.06 269.855 369.311 259.114 358.72C245.619 345.412 244.835 336.892 256.581 324.826C271.164 309.846 286.082 295.192 300.719 280.265C303.21 277.724 307.1 275.912 306.904 271.231C303.056 268.629 298.771 269.881 294.768 269.873C239.707 269.758 184.645 269.732 129.583 269.804C120.991 269.816 112.053 270.065 108.1 260.704C103.994 250.985 103.907 240.541 108.526 230.899C112.384 222.843 120.284 222.476 128.186 222.489C183.627 222.582 239.069 222.544 294.511 222.548C299.011 222.548 303.511 222.548 310.012 222.548C300.679 209.76 289.72 201.142 280.315 191.13C271.994 182.27 262.886 174.143 254.694 165.17C245.198 154.767 246.369 146.437 258.029 134.606C268.745 123.732 277.978 122.288 287.692 131.846C321.554 165.167 355.123 198.793 388.439 232.661C397.669 242.043 397.103 250.646 387.471 260.732C374.348 274.472 360.734 287.739 346.752 301.773Z"
+                                            fill="#0769CD" />
+                                        <rect x="20" y="20" width="453" height="453" rx="50" stroke="#0769CD" stroke-width="40" />
+                                    </svg>
+                                    <a href="">
+                                        <span> Передвежные
+                                        </span></a></button>
+                                <button class="btn-light btn-icon">
+                                    <svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="23" y="24" width="453" height="453" rx="50" stroke="#0769CD" stroke-width="40" />
+                                        <path d="M128 291H209" stroke="#0769CD" stroke-width="40" stroke-linecap="round" />
+                                        <path d="M128 372H209" stroke="#0769CD" stroke-width="40" stroke-linecap="round" />
+                                        <path d="M290 129L290 210" stroke="#0769CD" stroke-width="40" stroke-linecap="round" />
+                                        <path d="M290 129L290 210" stroke="#0769CD" stroke-width="40" stroke-linecap="round" />
+                                        <path d="M371 129L371 210" stroke="#0769CD" stroke-width="40" stroke-linecap="round" />
+                                        <path d="M209 210H290" stroke="#0769CD" stroke-width="40" stroke-linecap="round" />
+                                        <path d="M209 372H290" stroke="#0769CD" stroke-width="40" stroke-linecap="round" />
+                                        <path d="M290 129H371" stroke="#0769CD" stroke-width="40" stroke-linecap="round" />
+                                        <path d="M290 372H371" stroke="#0769CD" stroke-width="40" stroke-linecap="round" />
+                                        <path d="M209 291L209 210" stroke="#0769CD" stroke-width="40" stroke-linecap="round" />
+                                        <path d="M371 291L371 210" stroke="#0769CD" stroke-width="40" stroke-linecap="round" />
+                                        <path d="M128 372L128 291" stroke="#0769CD" stroke-width="40" stroke-linecap="round" />
+                                        <path d="M371 372L371 291" stroke="#0769CD" stroke-width="40" stroke-linecap="round" />
+                                    </svg>
+                                    <a href="">
+                                        <span> Лестничные
+                                        </span></a></button>
+                            </div>
+                            
+                            <ul class="catalog__items">
+                                <li class=" catalog-item">
+                                    <a href="./item.html">
+                                        <img src="./assets/img/catalog/sample.webp" alt="" class="catalog-item__img"></a>
+                                    <div class="catalog-item__info">
+                                        <a href="./item.html">
+                                            <h2 class="catalog-item__title"> ВПМ-001
+                                            </h2>
+                                            <h3>Вертикальный подъемник для инвалидов</h3>
+                                        </a>
+                                        <p class="catalog-item__cost">от 500 000 ₸</p>
+                                        <ul class="catalog-item__features">
+                                            <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
+                                                        fill="#414141" />
+                                
+                                                </svg> траектория: <span>сложная прямолинейная</span></li>
+                                            <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
+                                                        fill="#414141" />
+                                
+                                                </svg> угол наклона трассы: <span> до 60°</span></li>
+                                            <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
+                                                        fill="#414141" />
+                                
+                                                </svg> грузоподъемность: <span>до 400 кг</span></li>
+                                        </ul>
+                                        <a href="./item.html" class="catalog-item__btn btn">Подробнее</a>
+                                    </div>
+                                </li>                <li class=" catalog-item">
+                                    <a href="./item.html">
+                                        <img src="./assets/img/catalog/sample.webp" alt="" class="catalog-item__img"></a>
+                                    <div class="catalog-item__info">
+                                        <a href="./item.html">
+                                            <h2 class="catalog-item__title"> ВПМ-001
+                                            </h2>
+                                            <h3>Вертикальный подъемник для инвалидов</h3>
+                                        </a>
+                                        <p class="catalog-item__cost">от 500 000 ₸</p>
+                                        <ul class="catalog-item__features">
+                                            <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
+                                                        fill="#414141" />
+                                
+                                                </svg> траектория: <span>сложная прямолинейная</span></li>
+                                            <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
+                                                        fill="#414141" />
+                                
+                                                </svg> угол наклона трассы: <span> до 60°</span></li>
+                                            <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
+                                                        fill="#414141" />
+                                
+                                                </svg> грузоподъемность: <span>до 400 кг</span></li>
+                                        </ul>
+                                        <a href="./item.html" class="catalog-item__btn btn">Подробнее</a>
+                                    </div>
+                                </li>                <li class=" catalog-item">
+                                    <a href="./item.html">
+                                        <img src="./assets/img/catalog/sample.webp" alt="" class="catalog-item__img"></a>
+                                    <div class="catalog-item__info">
+                                        <a href="./item.html">
+                                            <h2 class="catalog-item__title"> ВПМ-001
+                                            </h2>
+                                            <h3>Вертикальный подъемник для инвалидов</h3>
+                                        </a>
+                                        <p class="catalog-item__cost">от 500 000 ₸</p>
+                                        <ul class="catalog-item__features">
+                                            <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
+                                                        fill="#414141" />
+                                
+                                                </svg> траектория: <span>сложная прямолинейная</span></li>
+                                            <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
+                                                        fill="#414141" />
+                                
+                                                </svg> угол наклона трассы: <span> до 60°</span></li>
+                                            <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
+                                                        fill="#414141" />
+                                
+                                                </svg> грузоподъемность: <span>до 400 кг</span></li>
+                                        </ul>
+                                        <a href="./item.html" class="catalog-item__btn btn">Подробнее</a>
+                                    </div>
+                                </li>                <li class=" catalog-item">
+                                    <a href="./item.html">
+                                        <img src="./assets/img/catalog/sample.webp" alt="" class="catalog-item__img"></a>
+                                    <div class="catalog-item__info">
+                                        <a href="./item.html">
+                                            <h2 class="catalog-item__title"> ВПМ-001
+                                            </h2>
+                                            <h3>Вертикальный подъемник для инвалидов</h3>
+                                        </a>
+                                        <p class="catalog-item__cost">от 500 000 ₸</p>
+                                        <ul class="catalog-item__features">
+                                            <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
+                                                        fill="#414141" />
+                                
+                                                </svg> траектория: <span>сложная прямолинейная</span></li>
+                                            <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
+                                                        fill="#414141" />
+                                
+                                                </svg> угол наклона трассы: <span> до 60°</span></li>
+                                            <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
+                                                        fill="#414141" />
+                                
+                                                </svg> грузоподъемность: <span>до 400 кг</span></li>
+                                        </ul>
+                                        <a href="./item.html" class="catalog-item__btn btn">Подробнее</a>
+                                    </div>
+                                </li>                <li class=" catalog-item">
+                                    <a href="./item.html">
+                                        <img src="./assets/img/catalog/sample.webp" alt="" class="catalog-item__img"></a>
+                                    <div class="catalog-item__info">
+                                        <a href="./item.html">
+                                            <h2 class="catalog-item__title"> ВПМ-001
+                                            </h2>
+                                            <h3>Вертикальный подъемник для инвалидов</h3>
+                                        </a>
+                                        <p class="catalog-item__cost">от 500 000 ₸</p>
+                                        <ul class="catalog-item__features">
+                                            <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
+                                                        fill="#414141" />
+                                
+                                                </svg> траектория: <span>сложная прямолинейная</span></li>
+                                            <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
+                                                        fill="#414141" />
+                                
+                                                </svg> угол наклона трассы: <span> до 60°</span></li>
+                                            <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
+                                                        fill="#414141" />
+                                
+                                                </svg> грузоподъемность: <span>до 400 кг</span></li>
+                                        </ul>
+                                        <a href="./item.html" class="catalog-item__btn btn">Подробнее</a>
+                                    </div>
+                                </li>                <li class=" catalog-item">
+                                    <a href="./item.html">
+                                        <img src="./assets/img/catalog/sample.webp" alt="" class="catalog-item__img"></a>
+                                    <div class="catalog-item__info">
+                                        <a href="./item.html">
+                                            <h2 class="catalog-item__title"> ВПМ-001
+                                            </h2>
+                                            <h3>Вертикальный подъемник для инвалидов</h3>
+                                        </a>
+                                        <p class="catalog-item__cost">от 500 000 ₸</p>
+                                        <ul class="catalog-item__features">
+                                            <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
+                                                        fill="#414141" />
+                                
+                                                </svg> траектория: <span>сложная прямолинейная</span></li>
+                                            <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
+                                                        fill="#414141" />
+                                
+                                                </svg> угол наклона трассы: <span> до 60°</span></li>
+                                            <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
+                                                        fill="#414141" />
+                                
+                                                </svg> грузоподъемность: <span>до 400 кг</span></li>
+                                        </ul>
+                                        <a href="./item.html" class="catalog-item__btn btn">Подробнее</a>
+                                    </div>
+                                </li>                <li class=" catalog-item">
+                                    <a href="./item.html">
+                                        <img src="./assets/img/catalog/sample.webp" alt="" class="catalog-item__img"></a>
+                                    <div class="catalog-item__info">
+                                        <a href="./item.html">
+                                            <h2 class="catalog-item__title"> ВПМ-001
+                                            </h2>
+                                            <h3>Вертикальный подъемник для инвалидов</h3>
+                                        </a>
+                                        <p class="catalog-item__cost">от 500 000 ₸</p>
+                                        <ul class="catalog-item__features">
+                                            <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
+                                                        fill="#414141" />
+                                
+                                                </svg> траектория: <span>сложная прямолинейная</span></li>
+                                            <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
+                                                        fill="#414141" />
+                                
+                                                </svg> угол наклона трассы: <span> до 60°</span></li>
+                                            <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
+                                                        fill="#414141" />
+                                
+                                                </svg> грузоподъемность: <span>до 400 кг</span></li>
+                                        </ul>
+                                        <a href="./item.html" class="catalog-item__btn btn">Подробнее</a>
+                                    </div>
+                                </li>                <li class=" catalog-item">
+                                    <a href="./item.html">
+                                        <img src="./assets/img/catalog/sample.webp" alt="" class="catalog-item__img"></a>
+                                    <div class="catalog-item__info">
+                                        <a href="./item.html">
+                                            <h2 class="catalog-item__title"> ВПМ-001
+                                            </h2>
+                                            <h3>Вертикальный подъемник для инвалидов</h3>
+                                        </a>
+                                        <p class="catalog-item__cost">от 500 000 ₸</p>
+                                        <ul class="catalog-item__features">
+                                            <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
+                                                        fill="#414141" />
+                                
+                                                </svg> траектория: <span>сложная прямолинейная</span></li>
+                                            <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
+                                                        fill="#414141" />
+                                
+                                                </svg> угол наклона трассы: <span> до 60°</span></li>
+                                            <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
+                                                        fill="#414141" />
+                                
+                                                </svg> грузоподъемность: <span>до 400 кг</span></li>
+                                        </ul>
+                                        <a href="./item.html" class="catalog-item__btn btn">Подробнее</a>
+                                    </div>
+                                </li>            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <div class="popup" id="popup">
+            <a href="#header" class="popup_area"></a>
+            <div class="popup_body">
+                <div class="popup_content">
+                    <h1 class="title">Оставить заявку</h1>
+                    <form action="/" class="popup_form">
+                        <input required class="form_input" type="text" placeholder="Ваше имя">
+                        <input required class="form_input" type="tel" placeholder="Ваш телефон">
+                        <textarea placeholder="Ваш вопрос" class="form_textarea" name="Вопрос" id="question" cols="30"
+                            rows="5"></textarea>
+                        <div class="checkbox">
+                            <input type="checkbox" class="custom-checkbox" name="popup-checkbox" id="popup-checkbox"><label
+                                for="popup-checkbox">Согласен на обработку
+                                персональных данных</label>
+                        </div>
+                        <button disabled type="submit" id="popup-btn" class="btn popup_btn">Заказать звонок</button>
+                    </form>
+                </div>
+            </div>
+        </div>        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <a href="./index.html"><img src="./assets/img/header/logo.svg" alt="Logo" class="logo"></a>
+                    <div class="footer__columns">
+        
+                        <div class="footer__column footer__column-1">
+                            <p class="footer__title">Каталог</p>
+                            <nav>
+                                <ul class="footer__list">
+                                    <li class="footer__link footer__text">
+                                        <a href="./catalog.html">Все подъемнкики</a>
+                                    </li>
+                                    <li class="footer__link footer__text">
+                                        <a href="#">Вертикальные</a>
+                                    </li>
+                                    <li class="footer__link footer__text">
+                                        <a href="#">Наклонные</a>
+                                    </li>
+                                    <li class="footer__link footer__text">
+                                        <a href="#">Передвежные</a>
+                                    </li>
+                                    <li class="footer__link footer__text">
+                                        <a href="#">Лестничные</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="footer__column footer__column-2">
+                            <p class="footer__title">Помощь</p>
+                            <nav>
+                                <ul class="footer__list">
+                                    <li class="footer__link footer__text">
+                                        <a href="./about.html">О компании</a>
+                                    </li>
+                                    <li class="footer__link footer__text">
+                                        <a href="./articles.html">Статьи</a>
+                                    </li>
+                                    <li class="footer__link footer__text">
+                                        <a href="./careers.html">Вакансии</a>
+                                    </li>
+                                    <li class="footer__link footer__text">
+                                        <a href="./delivery.html">Доставка</a>
+                                    </li>
+                                    <li class="footer__link footer__text">
+                                        <a href="./service.html">Монтаж и сервис</a>
+                                    </li>
+                                    <li class="footer__link footer__text">
+                                        <a href="./objects.html">Наши объекты</a>
+                                    </li>
+                                    <li class="footer__link footer__text">
+                                        <a href="./contact.html">Контакты</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+        
+        
+                        <div class="footer__column footer__column-center">
+                            <div class="footer__column footer__column-4">
+                                <p class="footer__title">Контакты</p>
+                                <div class="footer__contact">
+                                    <p>Звоните:</p>
+                                    <a class=" footer__text" href="tel:77077895550">8 (707) 789-55-50</a>
+                                </div>
+                                <div class="footer__contact">
+                                    <p>WhatsApp:</p>
+                                    <a class=" footer__text" href="https://wa.me/+77077895550">8 (707) 789-55-50</a>
+                                </div>
+                                <div class="footer__contact">
+                                    <p>Пишите:</p>
+                                    <a class=" footer__text" href="mailto:zakaz@easyway.kz">zakaz@easyway.kz</a>
                                 </div>
                             </div>
-                        </li>
-                        <li class="header__link">
-                            <div class="dropdown">
-                                <a href="./catalog.html">Подъемники для инвалидов <img src="./assets/img/header/arrow.svg"
-                                        alt=""></a>
-                                <div class="dropdown-content">
-                                    <a href="#">Вертикальные</a>
-                                    <a href="#">Наклонные</a>
-                                    <a href="#">Передвежные</a>
-                                    <a href="#">Лестничные</a>
+                            <div class="footer__column footer__column-3">
+                                <p class="footer__title">График работы</p>
+                                <div class="footer__days">
+                                    <div class="footer__day"></div>
+                                    <div class="footer__day"></div>
+                                    <div class="footer__day"></div>
+                                    <div class="footer__day"></div>
+                                    <div class="footer__day"></div>
+                                    <div class="footer__day gray"></div>
+                                    <div class="footer__day gray"></div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="header__link"><a href="./delivery.html">Доставка</a></li>
-                        <li class="header__link"><a href="./service.html">Монтаж и сервис</a></li>
-                        <li class="header__link"><a href="#">Наши объекты</a></li>
-                        <li class="header__link"><a href="./contact.html">Контакты</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>    <div class="wrapper">
-        <div class="breadcrumbs">
-            <div class="container">
-                <ul class="breadcrumbs__items">
-                    <li class="breadcrumbs__item">
-                        <a href="../index.html">Главная</a> <img src="./assets/img/breadcrumbs/vector.svg" alt="">
-                    </li>
-                    <li class="breadcrumbs__item">
-                        <a href="#">Контакты</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <section class="section first-section catalog">
-            <div class="container">
-                <h1 class="title">Подъемники для инвалидов</h1>
-                <div class="catalog__inner">
-                    <div class="catalog__filters">
-                        <button class="btn-light btn-icon">
-                            <svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="23" y="24" width="453" height="453" rx="50" stroke="#0769CD" stroke-width="40" />
-                                <path
-                                    d="M206.186 292.428C203.297 257.407 203.405 223.453 205.899 189.589C207.342 169.997 219.424 159.92 237.457 160.649C254.009 161.317 265.31 172.934 266.549 191.451C267.205 201.243 267.188 211.134 266.649 220.935C266.127 230.424 270.106 233.724 279.252 233.228C288.61 232.719 298.021 233 307.404 233.174C321.743 233.438 329.622 239.077 329.892 248.983C330.173 259.273 321.742 265.795 307.06 266.204C297.681 266.465 288.287 266.131 278.903 266.269C274.66 266.332 269.805 265.411 267.496 270.544C268.868 277.47 274.206 275.822 278.253 275.891C291.659 276.116 305.074 276.162 318.479 275.93C329.46 275.741 337.223 280.202 342.199 290.085C355.859 317.216 369.881 344.165 383.406 371.362C390.318 385.261 387.25 396.807 376.034 402.392C364.645 408.063 353.355 403.654 346.409 390.276C335.706 369.66 325.073 348.999 314.926 328.106C311.308 320.655 306.466 317.658 298.191 317.834C278.98 318.24 259.751 318.047 240.534 317.789C221.988 317.54 213.357 311.24 206.186 292.428Z"
-                                    fill="#0769CD" />
-                                <path
-                                    d="M305.817 347.522C310.68 355.737 309.905 362.379 305.461 369.711C283.205 406.427 238.825 426.51 197.455 418.097C151.653 408.782 119.542 374.403 112.886 327.556C107.112 286.915 130.035 242.852 167.576 223.989C173.451 221.037 180.314 212.708 187.587 220.889C192.675 226.614 188.191 248.408 181.693 252.488C162.604 264.474 150.049 280.65 145.748 303.268C138.752 340.054 164.009 378.389 200.753 385.818C234.157 392.57 264.599 377.773 281.183 346.868C283.778 342.033 284.445 335.39 292.256 335.071C300.535 334.733 302.088 341.484 305.817 347.522Z"
-                                    fill="#0769CD" />
-                                <path
-                                    d="M264.733 132.35C247.652 152.046 225.413 154.136 210.996 138.227C198.658 124.611 197.762 106.924 208.71 93.0566C218.699 80.4037 236.478 76.3805 250.966 83.4947C266.246 90.9981 273.479 108.437 268.254 125.471C267.609 127.573 266.311 129.474 264.733 132.35Z"
-                                    fill="#0769CD" />
-                            </svg>
-                            <a href="">
-                                <span> Все подъемники
-                                </span></a></button>
-                        <button class="btn-light btn-icon">
-                            <svg width="493" height="493" viewBox="0 0 493 493" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M302.773 146.647C321.889 165.76 340.424 184.309 358.997 202.823C370.06 213.85 370.311 223.545 359.72 234.286C346.412 247.78 337.892 248.565 325.826 236.818C310.846 222.236 296.192 207.318 281.265 192.68C278.724 190.189 276.912 186.3 272.231 186.495C269.629 190.343 270.881 194.629 270.873 198.631C270.758 253.692 270.732 308.754 270.804 363.816C270.816 372.408 271.065 381.346 261.704 385.299C251.985 389.405 241.541 389.493 231.899 384.874C223.843 381.016 223.476 373.115 223.489 365.213C223.582 309.772 223.544 254.331 223.548 198.888C223.548 194.388 223.548 189.888 223.548 183.387C210.76 192.72 202.142 203.68 192.13 213.084C183.27 221.406 175.143 230.514 166.17 238.705C155.767 248.201 147.437 247.03 135.606 235.37C124.732 224.654 123.288 215.421 132.846 205.708C166.167 171.846 199.793 138.277 233.661 104.96C243.043 95.7308 251.646 96.2965 261.732 105.929C275.472 119.052 288.739 132.666 302.773 146.647Z"
-                                    fill="#0769CD" />
-                                <rect x="20" y="20" width="453" height="453" rx="50" stroke="#0769CD" stroke-width="40" />
-                            </svg>
-        
-        
-                            <a href="">
-                                <span> Вертикальные
-                                </span></a></button>
-                        <button class="btn-light btn-icon">
-                            <svg width="493" height="493" viewBox="0 0 493 493" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M356.892 215.102C356.894 242.133 356.884 268.356 356.926 294.58C356.951 310.2 350.274 317.233 335.19 317.339C316.238 317.471 309.658 312.001 309.432 295.163C309.151 274.259 309.338 253.349 309.133 232.443C309.098 228.885 310.567 224.854 307.119 221.682C302.558 222.563 300.413 226.479 297.577 229.303C258.562 268.156 219.608 307.072 180.725 346.058C174.658 352.142 168.514 358.638 159.099 354.814C149.324 350.845 141.877 343.522 138.325 333.438C135.356 325.013 140.683 319.167 146.28 313.589C185.549 274.452 224.725 235.222 263.931 196.021C267.113 192.839 270.295 189.657 274.892 185.06C259.25 182.617 245.407 184.273 231.677 183.843C219.528 183.462 207.341 184.156 195.204 183.603C181.133 182.962 176.071 176.244 175.95 159.633C175.839 144.367 181.346 136.817 194.973 136.707C242.479 136.325 289.993 136.365 337.5 136.755C350.66 136.863 356.343 143.346 356.664 157.289C357.1 176.284 356.855 195.292 356.892 215.102Z"
-                                    fill="#0769CD" />
-                                <rect x="20" y="20" width="453" height="453" rx="50" stroke="#0769CD" stroke-width="40" />
-                            </svg>
-        
-        
-                            <a href="">
-                                <span> Наклонные
-                                </span></a></button>
-                        <button class="btn-light btn-icon">
-                            <svg width="493" height="493" viewBox="0 0 493 493" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M346.752 301.773C327.64 320.889 309.09 339.424 290.577 357.997C279.549 369.06 269.855 369.311 259.114 358.72C245.619 345.412 244.835 336.892 256.581 324.826C271.164 309.846 286.082 295.192 300.719 280.265C303.21 277.724 307.1 275.912 306.904 271.231C303.056 268.629 298.771 269.881 294.768 269.873C239.707 269.758 184.645 269.732 129.583 269.804C120.991 269.816 112.053 270.065 108.1 260.704C103.994 250.985 103.907 240.541 108.526 230.899C112.384 222.843 120.284 222.476 128.186 222.489C183.627 222.582 239.069 222.544 294.511 222.548C299.011 222.548 303.511 222.548 310.012 222.548C300.679 209.76 289.72 201.142 280.315 191.13C271.994 182.27 262.886 174.143 254.694 165.17C245.198 154.767 246.369 146.437 258.029 134.606C268.745 123.732 277.978 122.288 287.692 131.846C321.554 165.167 355.123 198.793 388.439 232.661C397.669 242.043 397.103 250.646 387.471 260.732C374.348 274.472 360.734 287.739 346.752 301.773Z"
-                                    fill="#0769CD" />
-                                <rect x="20" y="20" width="453" height="453" rx="50" stroke="#0769CD" stroke-width="40" />
-                            </svg>
-                            <a href="">
-                                <span> Передвежные
-                                </span></a></button>
-                        <button class="btn-light btn-icon">
-                            <svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="23" y="24" width="453" height="453" rx="50" stroke="#0769CD" stroke-width="40" />
-                                <path d="M128 291H209" stroke="#0769CD" stroke-width="40" stroke-linecap="round" />
-                                <path d="M128 372H209" stroke="#0769CD" stroke-width="40" stroke-linecap="round" />
-                                <path d="M290 129L290 210" stroke="#0769CD" stroke-width="40" stroke-linecap="round" />
-                                <path d="M290 129L290 210" stroke="#0769CD" stroke-width="40" stroke-linecap="round" />
-                                <path d="M371 129L371 210" stroke="#0769CD" stroke-width="40" stroke-linecap="round" />
-                                <path d="M209 210H290" stroke="#0769CD" stroke-width="40" stroke-linecap="round" />
-                                <path d="M209 372H290" stroke="#0769CD" stroke-width="40" stroke-linecap="round" />
-                                <path d="M290 129H371" stroke="#0769CD" stroke-width="40" stroke-linecap="round" />
-                                <path d="M290 372H371" stroke="#0769CD" stroke-width="40" stroke-linecap="round" />
-                                <path d="M209 291L209 210" stroke="#0769CD" stroke-width="40" stroke-linecap="round" />
-                                <path d="M371 291L371 210" stroke="#0769CD" stroke-width="40" stroke-linecap="round" />
-                                <path d="M128 372L128 291" stroke="#0769CD" stroke-width="40" stroke-linecap="round" />
-                                <path d="M371 372L371 291" stroke="#0769CD" stroke-width="40" stroke-linecap="round" />
-                            </svg>
-                            <a href="">
-                                <span> Лестничные
-                                </span></a></button>
-                    </div>
-                    
-                    <ul class="catalog__items">
-                        <li class=" catalog-item">
-                            <a href="./item.html">
-                                <img src="./assets/img/catalog/sample.webp" alt="" class="catalog-item__img"></a>
-                            <div class="catalog-item__info">
-                                <a href="./item.html">
-                                    <h2 class="catalog-item__title"> ВПМ-001
-                                    </h2>
-                                    <h3>Вертикальный подъемник для инвалидов</h3>
-                                </a>
-                                <p class="catalog-item__cost">от 500 000 ₸</p>
-                                <ul class="catalog-item__features">
-                                    <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
-                                                fill="#414141" />
-                        
-                                        </svg> траектория: <span>сложная прямолинейная</span></li>
-                                    <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
-                                                fill="#414141" />
-                        
-                                        </svg> угол наклона трассы: <span> до 60°</span></li>
-                                    <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
-                                                fill="#414141" />
-                        
-                                        </svg> грузоподъемность: <span>до 400 кг</span></li>
-                                </ul>
-                                <a href="./item.html" class="catalog-item__btn btn">Подробнее</a>
-                            </div>
-                        </li>                <li class=" catalog-item">
-                            <a href="./item.html">
-                                <img src="./assets/img/catalog/sample.webp" alt="" class="catalog-item__img"></a>
-                            <div class="catalog-item__info">
-                                <a href="./item.html">
-                                    <h2 class="catalog-item__title"> ВПМ-001
-                                    </h2>
-                                    <h3>Вертикальный подъемник для инвалидов</h3>
-                                </a>
-                                <p class="catalog-item__cost">от 500 000 ₸</p>
-                                <ul class="catalog-item__features">
-                                    <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
-                                                fill="#414141" />
-                        
-                                        </svg> траектория: <span>сложная прямолинейная</span></li>
-                                    <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
-                                                fill="#414141" />
-                        
-                                        </svg> угол наклона трассы: <span> до 60°</span></li>
-                                    <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
-                                                fill="#414141" />
-                        
-                                        </svg> грузоподъемность: <span>до 400 кг</span></li>
-                                </ul>
-                                <a href="./item.html" class="catalog-item__btn btn">Подробнее</a>
-                            </div>
-                        </li>                <li class=" catalog-item">
-                            <a href="./item.html">
-                                <img src="./assets/img/catalog/sample.webp" alt="" class="catalog-item__img"></a>
-                            <div class="catalog-item__info">
-                                <a href="./item.html">
-                                    <h2 class="catalog-item__title"> ВПМ-001
-                                    </h2>
-                                    <h3>Вертикальный подъемник для инвалидов</h3>
-                                </a>
-                                <p class="catalog-item__cost">от 500 000 ₸</p>
-                                <ul class="catalog-item__features">
-                                    <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
-                                                fill="#414141" />
-                        
-                                        </svg> траектория: <span>сложная прямолинейная</span></li>
-                                    <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
-                                                fill="#414141" />
-                        
-                                        </svg> угол наклона трассы: <span> до 60°</span></li>
-                                    <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
-                                                fill="#414141" />
-                        
-                                        </svg> грузоподъемность: <span>до 400 кг</span></li>
-                                </ul>
-                                <a href="./item.html" class="catalog-item__btn btn">Подробнее</a>
-                            </div>
-                        </li>                <li class=" catalog-item">
-                            <a href="./item.html">
-                                <img src="./assets/img/catalog/sample.webp" alt="" class="catalog-item__img"></a>
-                            <div class="catalog-item__info">
-                                <a href="./item.html">
-                                    <h2 class="catalog-item__title"> ВПМ-001
-                                    </h2>
-                                    <h3>Вертикальный подъемник для инвалидов</h3>
-                                </a>
-                                <p class="catalog-item__cost">от 500 000 ₸</p>
-                                <ul class="catalog-item__features">
-                                    <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
-                                                fill="#414141" />
-                        
-                                        </svg> траектория: <span>сложная прямолинейная</span></li>
-                                    <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
-                                                fill="#414141" />
-                        
-                                        </svg> угол наклона трассы: <span> до 60°</span></li>
-                                    <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
-                                                fill="#414141" />
-                        
-                                        </svg> грузоподъемность: <span>до 400 кг</span></li>
-                                </ul>
-                                <a href="./item.html" class="catalog-item__btn btn">Подробнее</a>
-                            </div>
-                        </li>                <li class=" catalog-item">
-                            <a href="./item.html">
-                                <img src="./assets/img/catalog/sample.webp" alt="" class="catalog-item__img"></a>
-                            <div class="catalog-item__info">
-                                <a href="./item.html">
-                                    <h2 class="catalog-item__title"> ВПМ-001
-                                    </h2>
-                                    <h3>Вертикальный подъемник для инвалидов</h3>
-                                </a>
-                                <p class="catalog-item__cost">от 500 000 ₸</p>
-                                <ul class="catalog-item__features">
-                                    <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
-                                                fill="#414141" />
-                        
-                                        </svg> траектория: <span>сложная прямолинейная</span></li>
-                                    <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
-                                                fill="#414141" />
-                        
-                                        </svg> угол наклона трассы: <span> до 60°</span></li>
-                                    <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
-                                                fill="#414141" />
-                        
-                                        </svg> грузоподъемность: <span>до 400 кг</span></li>
-                                </ul>
-                                <a href="./item.html" class="catalog-item__btn btn">Подробнее</a>
-                            </div>
-                        </li>                <li class=" catalog-item">
-                            <a href="./item.html">
-                                <img src="./assets/img/catalog/sample.webp" alt="" class="catalog-item__img"></a>
-                            <div class="catalog-item__info">
-                                <a href="./item.html">
-                                    <h2 class="catalog-item__title"> ВПМ-001
-                                    </h2>
-                                    <h3>Вертикальный подъемник для инвалидов</h3>
-                                </a>
-                                <p class="catalog-item__cost">от 500 000 ₸</p>
-                                <ul class="catalog-item__features">
-                                    <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
-                                                fill="#414141" />
-                        
-                                        </svg> траектория: <span>сложная прямолинейная</span></li>
-                                    <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
-                                                fill="#414141" />
-                        
-                                        </svg> угол наклона трассы: <span> до 60°</span></li>
-                                    <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
-                                                fill="#414141" />
-                        
-                                        </svg> грузоподъемность: <span>до 400 кг</span></li>
-                                </ul>
-                                <a href="./item.html" class="catalog-item__btn btn">Подробнее</a>
-                            </div>
-                        </li>                <li class=" catalog-item">
-                            <a href="./item.html">
-                                <img src="./assets/img/catalog/sample.webp" alt="" class="catalog-item__img"></a>
-                            <div class="catalog-item__info">
-                                <a href="./item.html">
-                                    <h2 class="catalog-item__title"> ВПМ-001
-                                    </h2>
-                                    <h3>Вертикальный подъемник для инвалидов</h3>
-                                </a>
-                                <p class="catalog-item__cost">от 500 000 ₸</p>
-                                <ul class="catalog-item__features">
-                                    <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
-                                                fill="#414141" />
-                        
-                                        </svg> траектория: <span>сложная прямолинейная</span></li>
-                                    <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
-                                                fill="#414141" />
-                        
-                                        </svg> угол наклона трассы: <span> до 60°</span></li>
-                                    <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
-                                                fill="#414141" />
-                        
-                                        </svg> грузоподъемность: <span>до 400 кг</span></li>
-                                </ul>
-                                <a href="./item.html" class="catalog-item__btn btn">Подробнее</a>
-                            </div>
-                        </li>                <li class=" catalog-item">
-                            <a href="./item.html">
-                                <img src="./assets/img/catalog/sample.webp" alt="" class="catalog-item__img"></a>
-                            <div class="catalog-item__info">
-                                <a href="./item.html">
-                                    <h2 class="catalog-item__title"> ВПМ-001
-                                    </h2>
-                                    <h3>Вертикальный подъемник для инвалидов</h3>
-                                </a>
-                                <p class="catalog-item__cost">от 500 000 ₸</p>
-                                <ul class="catalog-item__features">
-                                    <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
-                                                fill="#414141" />
-                        
-                                        </svg> траектория: <span>сложная прямолинейная</span></li>
-                                    <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
-                                                fill="#414141" />
-                        
-                                        </svg> угол наклона трассы: <span> до 60°</span></li>
-                                    <li class="catalog-item__feature"><svg width="8" height="8" viewBox="0 0 13 16" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z"
-                                                fill="#414141" />
-                        
-                                        </svg> грузоподъемность: <span>до 400 кг</span></li>
-                                </ul>
-                                <a href="./item.html" class="catalog-item__btn btn">Подробнее</a>
-                            </div>
-                        </li>            </ul>
-                </div>
-            </div>
-        </section>
-    </div>
-    <div class="popup" id="popup">
-        <a href="#header" class="popup_area"></a>
-        <div class="popup_body">
-            <div class="popup_content">
-                <h1 class="title">Оставить заявку</h1>
-                <form action="/" class="popup_form">
-                    <input required class="form_input" type="text" placeholder="Ваше имя">
-                    <input required class="form_input" type="tel" placeholder="Ваш телефон">
-                    <textarea placeholder="Ваш вопрос" class="form_textarea" name="Вопрос" id="question" cols="30"
-                        rows="5"></textarea>
-                    <div class="checkbox">
-                        <input type="checkbox" class="custom-checkbox" name="popup-checkbox" id="popup-checkbox"><label
-                            for="popup-checkbox">Согласен на обработку
-                            персональных данных</label>
-                    </div>
-                    <button disabled type="submit" id="popup-btn" class="btn popup_btn">Заказать звонок</button>
-                </form>
-            </div>
-        </div>
-    </div>    <footer class="footer">
-        <div class="container">
-            <div class="footer__inner">
-                <a href="./index.html"><img src="./assets/img/header/logo.svg" alt="Logo" class="logo"></a>
-                <div class="footer__columns">
-    
-                    <div class="footer__column footer__column-1">
-                        <p class="footer__title">Каталог</p>
-                        <nav>
-                            <ul class="footer__list">
-                                <li class="footer__link footer__text">
-                                    <a href="./catalog.html">Все подъемнкики</a>
-                                </li>
-                                <li class="footer__link footer__text">
-                                    <a href="#">Вертикальные</a>
-                                </li>
-                                <li class="footer__link footer__text">
-                                    <a href="#">Наклонные</a>
-                                </li>
-                                <li class="footer__link footer__text">
-                                    <a href="#">Передвежные</a>
-                                </li>
-                                <li class="footer__link footer__text">
-                                    <a href="#">Лестничные</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="footer__column footer__column-2">
-                        <p class="footer__title">Помощь</p>
-                        <nav>
-                            <ul class="footer__list">
-                                <li class="footer__link footer__text">
-                                    <a href="./about.html">О компании</a>
-                                </li>
-                                <li class="footer__link footer__text">
-                                    <a href="./articles.html">Статьи</a>
-                                </li>
-                                <li class="footer__link footer__text">
-                                    <a href="#">Вакансии</a>
-                                </li>
-                                <li class="footer__link footer__text">
-                                    <a href="./delivery.html">Доставка</a>
-                                </li>
-                                <li class="footer__link footer__text">
-                                    <a href="./service.html">Монтаж и сервис</a>
-                                </li>
-                                <li class="footer__link footer__text">
-                                    <a href="#">Наши объекты</a>
-                                </li>
-                                <li class="footer__link footer__text">
-                                    <a href="./contact.html">Контакты</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-    
-    
-                    <div class="footer__column footer__column-center">
-                        <div class="footer__column footer__column-4">
-                            <p class="footer__title">Контакты</p>
-                            <div class="footer__contact">
-                                <p>Звоните:</p>
-                                <a class=" footer__text" href="tel:77077895550">8 (707) 789-55-50</a>
-                            </div>
-                            <div class="footer__contact">
-                                <p>WhatsApp:</p>
-                                <a class=" footer__text" href="https://wa.me/+77077895550">8 (707) 789-55-50</a>
-                            </div>
-                            <div class="footer__contact">
-                                <p>Пишите:</p>
-                                <a class=" footer__text" href="mailto:zakaz@easyway.kz">zakaz@easyway.kz</a>
+                                <p class=" footer__text">Пн - Пт: <span>09:00 - 19:00</span></p>
+                                <p class=" footer__text">Сб - Вс: <span>выходной</span></p>
                             </div>
                         </div>
-                        <div class="footer__column footer__column-3">
+        
+                        <div class="footer__column footer__column-3 mobile">
                             <p class="footer__title">График работы</p>
                             <div class="footer__days">
                                 <div class="footer__day"></div>
@@ -584,25 +602,10 @@
                             <p class=" footer__text">Сб - Вс: <span>выходной</span></p>
                         </div>
                     </div>
-    
-                    <div class="footer__column footer__column-3 mobile">
-                        <p class="footer__title">График работы</p>
-                        <div class="footer__days">
-                            <div class="footer__day"></div>
-                            <div class="footer__day"></div>
-                            <div class="footer__day"></div>
-                            <div class="footer__day"></div>
-                            <div class="footer__day"></div>
-                            <div class="footer__day gray"></div>
-                            <div class="footer__day gray"></div>
-                        </div>
-                        <p class=" footer__text">Пн - Пт: <span>09:00 - 19:00</span></p>
-                        <p class=" footer__text">Сб - Вс: <span>выходной</span></p>
-                    </div>
                 </div>
             </div>
-        </div>
-    </footer>    <script src="./assets/js/main.js"></script>
+        </footer>    </div>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>

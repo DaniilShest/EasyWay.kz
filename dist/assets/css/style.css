@@ -84,7 +84,12 @@ select {
     }
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    height: 100%;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     color: #101010;
@@ -93,6 +98,16 @@ body {
 
 body.lock {
     overflow-y: hidden;
+}
+
+.body__wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1 1 auto;
 }
 
 .container {
@@ -560,12 +575,11 @@ body.lock {
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     padding: 20px 30px;
-    display: flex;
-    flex-direction: column;
-    right: 0;
     margin-top: 10px;
     color: #101010;
     position: absolute;
+    width: 100%;
+    min-width: 160px;
     background-color: #F6F6F6;
     border-radius: 10px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -1311,6 +1325,13 @@ textarea {
     }
 }
 
+.cards-item__btn {
+    margin-top: 15px;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
 .page-main {
     padding: 10px 0;
 }
@@ -1933,6 +1954,91 @@ textarea {
     width: 240px;
 }
 
+.career {
+    margin-bottom: 30px;
+}
+
+.career:last-child {
+    margin-bottom: 0;
+}
+
+.career__accordion {
+    background-color: #FFF;
+    transition: 0.4s;
+    box-shadow: 0px 4px 6px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    color: #414141;
+    font-size: 18px;
+}
+
+.career__btn {
+    font-weight: 700;
+    background-color: transparent;
+    font-size: 24px;
+    padding: 0;
+    color: #0769CD;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    border-radius: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.2s ease;
+}
+
+.career__btn::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/career/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.career__btn.active {
+    margin-bottom: 25px;
+}
+
+.career__panel {
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-radius: inherit;
+}
+
+.career__require {
+    margin-bottom: 25px;
+}
+
+.career__require span {
+    font-weight: 700;
+}
+
+.career__info {
+    margin-bottom: 20px;
+}
+
+.career__info:last-child {
+    margin-bottom: 0;
+}
+
+.career__info li {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.career__info li svg {
+    margin-right: 5px;
+    flex: 0 0 auto;
+}
+
 .delivery-map__text {
     margin-bottom: 20px;
     font-size: 20px;
@@ -2020,6 +2126,84 @@ textarea {
     .service-items__list {
         display: block;
     }
+}
+
+.object__card {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.object-card {
+    margin-bottom: 30px;
+}
+
+.object-card:last-child {
+    margin: 0;
+}
+
+.object-card__info ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.object-card__info ul li {
+    color: #414141;
+    font-size: 18px;
+}
+
+.object-card__info ul li span {
+    font-weight: 700;
+}
+
+.object-card__title {
+    font-size: 28px;
+    color: #0769CD;
+    margin-bottom: 15px;
+}
+
+.object-card__slider {
+    min-width: 0;
+    max-width: 400px;
+}
+
+.object-slider__slide img {
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.object-slider .swiper-pagination {
+    position: relative;
+    top: 0px !important;
+}
+
+.object-slider .swiper-pagination-bullet {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 10px;
+    opacity: 1;
+    background: rgb(196, 196, 196);
+    transition: all 0.2s ease;
+    margin: 0 7px !important;
+}
+
+.object-slider .swiper-pagination-bullet:first-child {
+    margin-left: 0px !important;
+}
+
+.object-slider .swiper-pagination-bullet-active {
+    width: 30px;
+    border-radius: 10px;
+    background: #007aff;
 }
 
 .contacts-main {

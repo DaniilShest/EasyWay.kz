@@ -17,214 +17,233 @@
     <title></title></head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header__top">
-                <a href="./index.html"><img src="./assets/img/header/logo.svg" alt="Logo" class="logo"></a>
-                <div class="header__contacts">
-                    <div class="header__contact"><a href="mailto:zakaz@easyway.kz">zakaz@easyway.kz</a></div>
-                    <div class="header__contact"><a href="tel:77077895550">8 (707) 789-55-50</a></div>
-                    <div class="header__contact"><a class="header__btn btn" href="#popup">Заказать звонок</a></div>
+    <div class="body__wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__top">
+                    <a href="./index.html"><img src="./assets/img/header/logo.svg" alt="Logo" class="logo"></a>
+                    <div class="header__contacts">
+                        <div class="header__contact"><a href="mailto:zakaz@easyway.kz">zakaz@easyway.kz</a></div>
+                        <div class="header__contact"><a href="tel:77077895550">8 (707) 789-55-50</a></div>
+                        <div class="header__contact"><a class="header__btn btn" href="#popup">Заказать звонок</a></div>
+                    </div>
+                    <div class="hamburger-menu">
+                        <input id="menu__toggle" type="checkbox" />
+                        <label class="menu__btn" for="menu__toggle">
+                            <span></span>
+                        </label>
+        
+                        <ul class="menu__box">
+                            <li>
+                                <a href="./index.html" class="menu__item logo"><img src="./assets/img/header/logo.svg"
+                                        alt="Logo" class="logo"></a>
+                            </li>
+                            <li>
+                                <button class="menu__item accordion">Информация</button>
+                                <div class="panel">
+                                    <a class="menu__item" href="./about.html">О компании</a>
+                                    <a class="menu__item" href="./articles.html">Статьи</a>
+                                    <a class="menu__item" href="./careers.html">Вакансии</a>
+                                </div>
+                            </li>
+                            <li>
+                                <button class="menu__item accordion">Подъемкники для инвалидов</button>
+                                <div class="panel">
+                                    <a class="menu__item" href="./catalog.html">Все подъемники</a>
+                                    <a class="menu__item" href="#">Вертикальные</a>
+                                    <a class="menu__item" href="#">Наклонные</a>
+                                    <a class="menu__item" href="#">Передвежные</a>
+                                    <a class="menu__item" href="#">Лестничные</a>
+                                </div>
+                            </li>
+                            <li><a class="menu__item" href="./delivery.html">Доставка</a></li>
+                            <li><a class="menu__item" href="./service.html">Монтаж и сервис</a></li>
+                            <li><a class="menu__item" href="./objects.html">Наши объекты</a></li>
+                            <li><a class="menu__item margin-bottom" href="./contact.html">Контакты</a></li>
+                            <div class="menu__item contact"><a href="mailto:zakaz@easyway.kz">zakaz@easyway.kz</a></div>
+                            <div class="menu__item contact"><a href="tel:77077895550">8 (707) 789-55-50</a></div>
+                            <div class="menu__item btn"><a href="#popup">Заказать звонок</a>
+                            </div>
+                        </ul>
+                    </div>
                 </div>
-                <div class="hamburger-menu">
-                    <input id="menu__toggle" type="checkbox" />
-                    <label class="menu__btn" for="menu__toggle">
-                        <span></span>
-                    </label>
-    
-                    <ul class="menu__box">
-                        <li>
-                            <a href="./index.html" class="menu__item logo"><img src="./assets/img/header/logo.svg"
-                                    alt="Logo" class="logo"></a>
-                        </li>
-                        <li>
-                            <button class="menu__item accordion">Информация</button>
-                            <div class="panel">
-                                <a class="menu__item" href="./about.html">О компании</a>
-    
-                                <a href="./articles.html">Статьи</a>
-                                <a class="menu__item" href="#">Вакансии</a>
-                            </div>
-                        </li>
-                        <li>
-                            <button class="menu__item accordion">Подъемкники для инвалидов</button>
-                            <div class="panel">
-                                <a class="menu__item" href="./catalog.html">Все подъемники</a>
-                                <a class="menu__item" href="#">Вертикальные</a>
-                                <a class="menu__item" href="#">Наклонные</a>
-                                <a class="menu__item" href="#">Передвежные</a>
-                                <a class="menu__item" href="#">Лестничные</a>
-                            </div>
-                        </li>
-                        <li><a class="menu__item" href="./delivery.html">Доставка</a></li>
-                        <li><a class="menu__item" href="./service.html">Монтаж и сервис</a></li>
-                        <li><a class="menu__item" href="#">Наши объекты</a></li>
-                        <li><a class="menu__item margin-bottom" href="./contact.html">Контакты</a></li>
-                        <div class="menu__item contact"><a href="mailto:zakaz@easyway.kz">zakaz@easyway.kz</a></div>
-                        <div class="menu__item contact"><a href="tel:77077895550">8 (707) 789-55-50</a></div>
-                        <div class="menu__item btn"><a href="#popup">Заказать звонок</a>
-                        </div>
-                    </ul>
+                <div class="header__bottom">
+                    <nav>
+                        <ul class="header__links">
+                            <li class="header__link">
+                                <div class="dropdown">
+                                    <a href="#">Информация <img src="./assets/img/header/arrow.svg" alt=""></a>
+                                    <div class="dropdown-content">
+                                        <a href="./about.html">О компании</a>
+                                        <a href="./articles.html">Статьи</a>
+                                        <a href="./careers.html">Вакансии</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header__link">
+                                <div class="dropdown">
+                                    <a href="./catalog.html">Подъемники для инвалидов <img src="./assets/img/header/arrow.svg"
+                                            alt=""></a>
+                                    <div class="dropdown-content">
+                                        <a href="#">Вертикальные</a>
+                                        <a href="#">Наклонные</a>
+                                        <a href="#">Передвежные</a>
+                                        <a href="#">Лестничные</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header__link"><a href="./delivery.html">Доставка</a></li>
+                            <li class="header__link"><a href="./service.html">Монтаж и сервис</a></li>
+                            <li class="header__link"><a href="./objects.html">Наши объекты</a></li>
+                            <li class="header__link"><a href="./contact.html">Контакты</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
-            <div class="header__bottom">
-                <nav>
-                    <ul class="header__links">
-                        <li class="header__link">
-                            <div class="dropdown">
-                                <a href="#">Информация <img src="./assets/img/header/arrow.svg" alt=""></a>
-                                <div class="dropdown-content">
-                                    <a href="./about.html">О компании</a>
-                                    <a href="./articles.html">Статьи</a>
-                                    <a href="./careers.html">Вакансии</a>
+        </header>        <main class="main">
+            <div class="wrapper">
+                <div class="breadcrumbs">
+                    <div class="container">
+                        <ul class="breadcrumbs__items">
+                            <li class="breadcrumbs__item">
+                                <a href="../index.html">Главная</a> <img src="./assets/img/breadcrumbs/vector.svg" alt="">
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <section class="section first-section">
+                    <div class="container">
+                        <h1 class="title">Статьи</h1>
+                        <ul class="cards-items__list">
+                            <li class="cards-items__item cards-item">
+                                <a href="./article.html"><img src="./assets/img/articles/sale.jpg" alt="" class="cards-item__img"></a>
+                                <div class="cards-item__info">
+                                    <a href="./article.html">
+                                        <h2 class="cards-item__title">Скидка 50 000 ₸</h2>
+                                    </a>
+                                    <p class="cards-item__text">Скидка — добровольное, одностороннее снижение стоимости товара
+                                        продавцом от первоначальной стоимости товара.</p>
+                                    <a href="./article.html" class="btn cards-item__btn">Подробнее</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <div class="popup" id="popup">
+            <a href="#header" class="popup_area"></a>
+            <div class="popup_body">
+                <div class="popup_content">
+                    <h1 class="title">Оставить заявку</h1>
+                    <form action="/" class="popup_form">
+                        <input required class="form_input" type="text" placeholder="Ваше имя">
+                        <input required class="form_input" type="tel" placeholder="Ваш телефон">
+                        <textarea placeholder="Ваш вопрос" class="form_textarea" name="Вопрос" id="question" cols="30"
+                            rows="5"></textarea>
+                        <div class="checkbox">
+                            <input type="checkbox" class="custom-checkbox" name="popup-checkbox" id="popup-checkbox"><label
+                                for="popup-checkbox">Согласен на обработку
+                                персональных данных</label>
+                        </div>
+                        <button disabled type="submit" id="popup-btn" class="btn popup_btn">Заказать звонок</button>
+                    </form>
+                </div>
+            </div>
+        </div>        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <a href="./index.html"><img src="./assets/img/header/logo.svg" alt="Logo" class="logo"></a>
+                    <div class="footer__columns">
+        
+                        <div class="footer__column footer__column-1">
+                            <p class="footer__title">Каталог</p>
+                            <nav>
+                                <ul class="footer__list">
+                                    <li class="footer__link footer__text">
+                                        <a href="./catalog.html">Все подъемнкики</a>
+                                    </li>
+                                    <li class="footer__link footer__text">
+                                        <a href="#">Вертикальные</a>
+                                    </li>
+                                    <li class="footer__link footer__text">
+                                        <a href="#">Наклонные</a>
+                                    </li>
+                                    <li class="footer__link footer__text">
+                                        <a href="#">Передвежные</a>
+                                    </li>
+                                    <li class="footer__link footer__text">
+                                        <a href="#">Лестничные</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="footer__column footer__column-2">
+                            <p class="footer__title">Помощь</p>
+                            <nav>
+                                <ul class="footer__list">
+                                    <li class="footer__link footer__text">
+                                        <a href="./about.html">О компании</a>
+                                    </li>
+                                    <li class="footer__link footer__text">
+                                        <a href="./articles.html">Статьи</a>
+                                    </li>
+                                    <li class="footer__link footer__text">
+                                        <a href="./careers.html">Вакансии</a>
+                                    </li>
+                                    <li class="footer__link footer__text">
+                                        <a href="./delivery.html">Доставка</a>
+                                    </li>
+                                    <li class="footer__link footer__text">
+                                        <a href="./service.html">Монтаж и сервис</a>
+                                    </li>
+                                    <li class="footer__link footer__text">
+                                        <a href="./objects.html">Наши объекты</a>
+                                    </li>
+                                    <li class="footer__link footer__text">
+                                        <a href="./contact.html">Контакты</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+        
+        
+                        <div class="footer__column footer__column-center">
+                            <div class="footer__column footer__column-4">
+                                <p class="footer__title">Контакты</p>
+                                <div class="footer__contact">
+                                    <p>Звоните:</p>
+                                    <a class=" footer__text" href="tel:77077895550">8 (707) 789-55-50</a>
+                                </div>
+                                <div class="footer__contact">
+                                    <p>WhatsApp:</p>
+                                    <a class=" footer__text" href="https://wa.me/+77077895550">8 (707) 789-55-50</a>
+                                </div>
+                                <div class="footer__contact">
+                                    <p>Пишите:</p>
+                                    <a class=" footer__text" href="mailto:zakaz@easyway.kz">zakaz@easyway.kz</a>
                                 </div>
                             </div>
-                        </li>
-                        <li class="header__link">
-                            <div class="dropdown">
-                                <a href="./catalog.html">Подъемники для инвалидов <img src="./assets/img/header/arrow.svg"
-                                        alt=""></a>
-                                <div class="dropdown-content">
-                                    <a href="#">Вертикальные</a>
-                                    <a href="#">Наклонные</a>
-                                    <a href="#">Передвежные</a>
-                                    <a href="#">Лестничные</a>
+                            <div class="footer__column footer__column-3">
+                                <p class="footer__title">График работы</p>
+                                <div class="footer__days">
+                                    <div class="footer__day"></div>
+                                    <div class="footer__day"></div>
+                                    <div class="footer__day"></div>
+                                    <div class="footer__day"></div>
+                                    <div class="footer__day"></div>
+                                    <div class="footer__day gray"></div>
+                                    <div class="footer__day gray"></div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="header__link"><a href="./delivery.html">Доставка</a></li>
-                        <li class="header__link"><a href="./service.html">Монтаж и сервис</a></li>
-                        <li class="header__link"><a href="#">Наши объекты</a></li>
-                        <li class="header__link"><a href="./contact.html">Контакты</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>    <div class="wrapper">
-        <div class="breadcrumbs">
-            <div class="container">
-                <ul class="breadcrumbs__items">
-                    <li class="breadcrumbs__item">
-                        <a href="../index.html">Главная</a> <img src="./assets/img/breadcrumbs/vector.svg" alt="">
-                    </li>
-                    <li class="breadcrumbs__item">
-                        <a href="#">Контакты</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <section class="section first-section">
-            <div class="container">
-                <h1 class="title">Статьи</h1>
-                <ul class="cards-items__list">
-                    <li class="cards-items__item cards-item">
-                        <a href="./article.html"><img src="./assets/img/articles/sale.jpg" alt="" class="cards-item__img"></a>
-                        <div class="cards-item__info">
-                            <a href="./article.html">
-                                <h2 class="cards-item__title">Скидка 50 000 ₸</h2>
-                            </a>
-                            <p class="cards-item__text">Скидка — добровольное, одностороннее снижение стоимости товара
-                                продавцом от первоначальной стоимости товара.</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-    </div>
-    <div class="popup" id="popup">
-        <a href="#header" class="popup_area"></a>
-        <div class="popup_body">
-            <div class="popup_content">
-                <h1 class="title">Оставить заявку</h1>
-                <form action="/" class="popup_form">
-                    <input required class="form_input" type="text" placeholder="Ваше имя">
-                    <input required class="form_input" type="tel" placeholder="Ваш телефон">
-                    <textarea placeholder="Ваш вопрос" class="form_textarea" name="Вопрос" id="question" cols="30"
-                        rows="5"></textarea>
-                    <div class="checkbox">
-                        <input type="checkbox" class="custom-checkbox" name="popup-checkbox" id="popup-checkbox"><label
-                            for="popup-checkbox">Согласен на обработку
-                            персональных данных</label>
-                    </div>
-                    <button disabled type="submit" id="popup-btn" class="btn popup_btn">Заказать звонок</button>
-                </form>
-            </div>
-        </div>
-    </div>    <footer class="footer">
-        <div class="container">
-            <div class="footer__inner">
-                <a href="./index.html"><img src="./assets/img/header/logo.svg" alt="Logo" class="logo"></a>
-                <div class="footer__columns">
-    
-                    <div class="footer__column footer__column-1">
-                        <p class="footer__title">Каталог</p>
-                        <nav>
-                            <ul class="footer__list">
-                                <li class="footer__link footer__text">
-                                    <a href="./catalog.html">Все подъемнкики</a>
-                                </li>
-                                <li class="footer__link footer__text">
-                                    <a href="#">Вертикальные</a>
-                                </li>
-                                <li class="footer__link footer__text">
-                                    <a href="#">Наклонные</a>
-                                </li>
-                                <li class="footer__link footer__text">
-                                    <a href="#">Передвежные</a>
-                                </li>
-                                <li class="footer__link footer__text">
-                                    <a href="#">Лестничные</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="footer__column footer__column-2">
-                        <p class="footer__title">Помощь</p>
-                        <nav>
-                            <ul class="footer__list">
-                                <li class="footer__link footer__text">
-                                    <a href="./about.html">О компании</a>
-                                </li>
-                                <li class="footer__link footer__text">
-                                    <a href="./articles.html">Статьи</a>
-                                </li>
-                                <li class="footer__link footer__text">
-                                    <a href="#">Вакансии</a>
-                                </li>
-                                <li class="footer__link footer__text">
-                                    <a href="./delivery.html">Доставка</a>
-                                </li>
-                                <li class="footer__link footer__text">
-                                    <a href="./service.html">Монтаж и сервис</a>
-                                </li>
-                                <li class="footer__link footer__text">
-                                    <a href="#">Наши объекты</a>
-                                </li>
-                                <li class="footer__link footer__text">
-                                    <a href="./contact.html">Контакты</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-    
-    
-                    <div class="footer__column footer__column-center">
-                        <div class="footer__column footer__column-4">
-                            <p class="footer__title">Контакты</p>
-                            <div class="footer__contact">
-                                <p>Звоните:</p>
-                                <a class=" footer__text" href="tel:77077895550">8 (707) 789-55-50</a>
-                            </div>
-                            <div class="footer__contact">
-                                <p>WhatsApp:</p>
-                                <a class=" footer__text" href="https://wa.me/+77077895550">8 (707) 789-55-50</a>
-                            </div>
-                            <div class="footer__contact">
-                                <p>Пишите:</p>
-                                <a class=" footer__text" href="mailto:zakaz@easyway.kz">zakaz@easyway.kz</a>
+                                <p class=" footer__text">Пн - Пт: <span>09:00 - 19:00</span></p>
+                                <p class=" footer__text">Сб - Вс: <span>выходной</span></p>
                             </div>
                         </div>
-                        <div class="footer__column footer__column-3">
+        
+                        <div class="footer__column footer__column-3 mobile">
                             <p class="footer__title">График работы</p>
                             <div class="footer__days">
                                 <div class="footer__day"></div>
@@ -239,25 +258,10 @@
                             <p class=" footer__text">Сб - Вс: <span>выходной</span></p>
                         </div>
                     </div>
-    
-                    <div class="footer__column footer__column-3 mobile">
-                        <p class="footer__title">График работы</p>
-                        <div class="footer__days">
-                            <div class="footer__day"></div>
-                            <div class="footer__day"></div>
-                            <div class="footer__day"></div>
-                            <div class="footer__day"></div>
-                            <div class="footer__day"></div>
-                            <div class="footer__day gray"></div>
-                            <div class="footer__day gray"></div>
-                        </div>
-                        <p class=" footer__text">Пн - Пт: <span>09:00 - 19:00</span></p>
-                        <p class=" footer__text">Сб - Вс: <span>выходной</span></p>
-                    </div>
                 </div>
             </div>
-        </div>
-    </footer>    <script src="./assets/js/main.js"></script>
+        </footer>    </div>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>

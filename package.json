@@ -23,6 +23,7 @@
         "sass": "^1.56.1"
     },
     "dependencies": {
+        "lightgallery.js": "^1.4.0",
         "swiper": "^9.1.0"
     }
 }
