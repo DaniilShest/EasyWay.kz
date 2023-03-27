@@ -1,8 +1,51 @@
-@import "variables";
+.main-request {
+
+    &__title {}
+
+    &__inner {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 880px) {
+            justify-content: center;
+            padding: 0;
+        }
+    }
+
+    &__square {
+        width: 290px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+
+        @media (max-width: 880px) {
+            display: none;
+        }
+    }
+
+    &__wrapper {
+        background: linear-gradient(90deg, rgba(7, 105, 205, 1) 48%, rgba(255, 255, 255, 1) 48%);
+
+        @media (max-width: 880px) {
+            background: transparent;
+        }
+    }
+
+    &__img {
+        margin-right: 88px;
+
+        @media (max-width: 880px) {
+            display: none;
+        }
+    }
+}
 
 .form {
     width: 100%;
     height: 100%;
+
+    @media (max-width: 880px) {
+        max-width: 500px;
+    }
 
     input {
         width: 100%;

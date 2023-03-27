@@ -51,14 +51,6 @@
     }
 }
 
-#slider-img {
-    img {
-        width: 400px;
-        height: 300px;
-        border-radius: 10px;
-    }
-
-}
 
 .object-slider {
 
@@ -67,7 +59,7 @@
     &__slide {
         img {
             width: 400px;
-            height: 400px;
+            height: 300px;
             border-radius: 10px;
             object-fit: cover;
             object-position: center;

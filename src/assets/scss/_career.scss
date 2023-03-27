@@ -41,10 +41,15 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
+            transition: all .2s ease;
         }
 
         &.active {
             margin-bottom: 25px;
+
+            &::after {
+                transform: scale(1, -1)
+            }
         }
     }
 
