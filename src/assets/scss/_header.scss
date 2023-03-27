@@ -127,6 +127,10 @@
     transform: rotate(90deg);
 }
 
+#menu__toggle:checked~.body__wrapper {
+    overflow: hidden;
+}
+
 #menu__toggle:checked~.menu__box {
     visibility: visible;
     right: 0;
@@ -176,6 +180,7 @@
     position: fixed;
     z-index: 2000;
     visibility: hidden;
+    overflow-y: auto;
     top: 0;
     right: -100%;
 

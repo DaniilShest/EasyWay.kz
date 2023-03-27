@@ -1,6 +1,10 @@
 .main-request {
 
-    &__title {}
+    &__title {
+        @media (max-width: 600px) {
+            margin-bottom: 0;
+        }
+    }
 
     &__inner {
 

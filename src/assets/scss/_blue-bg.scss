@@ -55,7 +55,7 @@
 
             @media (max-width: 880px) {
                 max-width: 100%;
-                height: 360px;
+                height: 320px;
             }
         }
 
@@ -80,6 +80,10 @@
 
     &__description {
         padding-top: 30px;
+
+        @media (max-width: 880px) {
+            padding-top: 0;
+        }
     }
 
     &__title {
@@ -136,6 +140,10 @@
     &__points {
         margin-left: 25px;
         margin-bottom: 60px;
+
+        @media (max-width: 880px) {
+            margin-bottom: 20px;
+        }
     }
 
     &__point {
@@ -144,14 +152,27 @@
 
         svg {
             margin-right: 10px;
+
+            @media (max-width: 880px) {
+                width: 10px;
+                height: 10px;
+            }
         }
 
         p {
             font-weight: 500;
             font-size: 20px;
+
+            @media (max-width: 880px) {
+                font-size: 18px;
+            }
         }
 
         margin-bottom: 18px;
+
+        @media (max-width: 880px) {
+            margin-bottom: 10px;
+        }
 
         &:last-child {
             margin-bottom: 0;

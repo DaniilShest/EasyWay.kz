@@ -1,8 +1,8 @@
 .main-slider {
     margin-top: 24px;
 
-    &__btn {
-        margin-bottom: 140px;
+    @media (max-width: 600px) {
+        margin-top: 0;
     }
 
     .main__pagination {
@@ -10,11 +10,21 @@
         top: 40px;
     }
 
+    &__description {
+        @media (max-width: 600px) {
+            margin-bottom: 30px;
+        }
+    }
+
     .swiper-pagination {
         position: absolute;
         text-align: left;
         left: 0;
         bottom: 70px !important;
+
+        @media (max-width: 600px) {
+            bottom: 40px !important;
+        }
     }
 
     .swiper-pagination-bullet {
@@ -90,12 +100,21 @@
     &__description {
         max-width: 580px;
         padding-bottom: 10px;
+
+        @media (max-width: 600px) {
+            margin-top: 20px;
+        }
     }
 
     &__about {
         font-weight: 700;
         font-size: 26px;
-        margin-bottom: 24px
+        margin-bottom: 24px;
+
+        @media (max-width: 600px) {
+            margin-bottom: 10px;
+        }
+
     }
 
     &__p {
@@ -107,15 +126,23 @@
 
         margin-bottom: 30px;
 
+        @media (max-width: 600px) {
+            margin-bottom: 10px;
+        }
+
         &:last-of-type {
             margin-bottom: 55px;
+
+            @media (max-width: 600px) {
+                margin-bottom: 30px;
+            }
         }
     }
 
     &__square {
         top: 0;
         left: auto;
-        right: 250px;
+        right: 50%;
 
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
