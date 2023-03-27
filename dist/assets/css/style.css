@@ -1014,6 +1014,10 @@ body.lock {
     }
 }
 
+.main-about__info {
+    align-items: center;
+}
+
 .main-about__about {
     font-weight: 700;
     font-size: 26px;
