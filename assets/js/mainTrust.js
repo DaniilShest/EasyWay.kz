@@ -18,6 +18,10 @@ const mainTrust = new Swiper('.main-trust__slider', {
         },
         880: {
             slidesPerView: 3,
+            spaceBetween: 30
+        },
+        960: {
+            slidesPerView: 4,
             spaceBetween: 40
         }
     }
