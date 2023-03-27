@@ -832,10 +832,39 @@ body.lock {
     background: #007aff;
 }
 
+.main-catalog__container {
+    overflow: hidden;
+}
+
+.main-catalog__slider {
+    overflow: visible !important;
+}
+
 .main-catalog__list {
-    display: flex;
-    align-items: stretch;
-    justify-content: space-between;
+    padding-bottom: 40px !important;
+}
+
+.main-catalog .swiper-pagination {
+    bottom: 0 !important;
+}
+
+.main-catalog .swiper-pagination .swiper-pagination-bullet {
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+    opacity: 1;
+    background: #dadada;
+    transition: all 0.2s ease;
+    margin: 0 5px !important;
+}
+
+.main-catalog .swiper-pagination .swiper-pagination-bullet-active {
+    background: #0769CD;
+    width: 36px;
+    border-radius: 20px;
 }
 
 .main-about {
@@ -1538,7 +1567,6 @@ textarea {
     padding-bottom: 24px;
     display: flex;
     flex-direction: column;
-    margin-right: 20px;
 }
 
 .catalog-item:last-child {
@@ -2076,7 +2104,7 @@ textarea {
     background-color: transparent;
     font-size: 24px;
     padding: 0;
-    color: #0769CD;
+    color: #101010;
     cursor: pointer;
     width: 100%;
     text-align: left;
@@ -2312,6 +2340,11 @@ textarea {
     width: 30px;
     border-radius: 10px;
     background: #007aff;
+}
+
+.object-slider .review-img {
+    -o-object-fit: contain;
+    object-fit: contain;
 }
 
 .contacts-main {

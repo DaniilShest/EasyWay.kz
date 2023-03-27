@@ -126,10 +126,39 @@
 
 .main-catalog {
 
+    &__container {
+        overflow: hidden;
+    }
+
+    &__slider {
+        overflow: visible !important;
+    }
+
     &__list {
-        display: flex;
-        align-items: stretch;
-        justify-content: space-between;
+        padding-bottom: 40px !important;
+    }
+
+    .swiper-pagination {
+        bottom: 0 !important;
+
+        .swiper-pagination-bullet {
+            border-radius: 50%;
+            width: 12px;
+            height: 12px;
+            text-align: center;
+            line-height: 30px;
+            font-size: 12px;
+            opacity: 1;
+            background: #dadada;
+            transition: all .2s ease;
+            margin: 0 5px !important;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: $primary;
+            width: 36px;
+            border-radius: 20px;
+        }
     }
 
 }
