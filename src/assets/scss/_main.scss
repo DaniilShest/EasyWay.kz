@@ -1,86 +1,6 @@
 .main-slider {
     margin-top: 24px;
 
-    color: $dark;
-
-    &__wrapper {
-        padding: 10px 0;
-    }
-
-    &__body {
-        background: linear-gradient(90deg, rgba(255, 255, 255, 1) 48%, rgba(7, 105, 205, 1) 48%);
-    }
-
-    &__content {}
-
-    &__square {
-        width: 250px;
-        right: 0;
-        top: 0;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
-    }
-
-    &__content {
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-    }
-
-
-    &__description {
-        // margin-left: 30px;
-    }
-
-    &__img {
-        object-fit: cover;
-        object-position: center;
-    }
-
-    &__title {
-        font-weight: 900;
-        font-size: 40px;
-        text-transform: uppercase;
-        margin-bottom: 28px;
-
-        span {
-            color: $primary
-        }
-    }
-
-    &__text {
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 28px;
-        max-width: 540px;
-        margin-bottom: 28px;
-    }
-
-    &__points {
-        margin-left: 25px;
-        margin-bottom: 60px;
-    }
-
-    &__point {
-        display: flex;
-        align-items: center;
-
-        svg {
-            margin-right: 10px;
-        }
-
-        p {
-            font-weight: 500;
-            font-size: 20px;
-        }
-
-        margin-bottom: 18px;
-
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-
     &__btn {
         margin-bottom: 140px;
     }
@@ -167,33 +87,6 @@
 .main-about {
     background-color: #FFF;
 
-    &__title {}
-
-    &__wrapper {
-        background: linear-gradient(90deg, rgba(7, 105, 205, 1) 48%, rgba(255, 255, 255, 1) 48%);
-    }
-
-    &__inner {
-        background-color: #FFF;
-        position: relative;
-    }
-
-
-    &__square {
-        width: 250px;
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px;
-        left: 0;
-        top: 0;
-    }
-
-    &__img {
-        object-fit: cover;
-        border-radius: 10px;
-        margin-right: 88px;
-        // box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.25);
-    }
-
     &__description {
         max-width: 580px;
         padding-bottom: 10px;
@@ -217,6 +110,18 @@
         &:last-of-type {
             margin-bottom: 55px;
         }
+    }
+
+    &__square {
+        top: 0;
+        left: auto;
+        right: 250px;
+
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        width: 50vw;
     }
 
 }
