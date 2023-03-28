@@ -279,7 +279,7 @@
     position: absolute;
     width: 100%;
     min-width: 160px;
-    background-color: $lightgray;
+    background-color: #FFF;
     border-radius: 10px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -299,7 +299,7 @@
         text-decoration: none;
         /*убираем подчёркивание*/
         display: inline-block;
-        margin-bottom: 12px;
+        margin-bottom: 14px;
         white-space: nowrap;
 
         &:last-child {

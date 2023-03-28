@@ -1,5 +1,5 @@
 .main-slider {
-    // margin-top: 24px;
+    margin-top: 24px;
 
     @media (max-width: 600px) {
         margin-top: 0;
@@ -55,6 +55,8 @@
 
 
 .main-catalog {
+    background-color: $lightbg;
+    margin-top: 40px;
 
     &__container {
         overflow: hidden;
@@ -96,7 +98,6 @@
 
 
 .main-about {
-    background-color: #FFF;
 
     &__description {
         max-width: 580px;

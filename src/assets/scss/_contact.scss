@@ -1,6 +1,7 @@
 .contacts-main {
 
     padding: 10px 0;
+    margin-bottom: 30px;
 
     &__wrapper {
         background: none;
@@ -28,8 +29,9 @@
     }
 
     &__map {
-        width: 500px;
-        height: 560px;
+        max-width: 560px;
+        height: 460px;
+        flex: 1 1 auto;
         padding: 30px 0;
         position: relative;
 
