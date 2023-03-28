@@ -8,8 +8,9 @@
     border-radius: 10px;
     position: relative;
     padding-bottom: 24px;
-    display: flex;
+    display: flex !important;
     flex-direction: column;
+    height: auto !important;
 
     &:last-child {
         margin-right: 0

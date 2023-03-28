@@ -17,6 +17,11 @@
         padding: 20px 0;
         border-bottom: 1px solid $borderlight;
         position: relative;
+
+        @media (max-width: 1000px) {
+            border: 0;
+            padding: 14px 0;
+        }
     }
 
     &__contacts {
@@ -54,7 +59,7 @@
     }
 
     &__link {
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 500;
         display: flex;
         align-items: center;

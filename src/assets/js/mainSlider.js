@@ -23,7 +23,6 @@ const catalogSlider = new Swiper('.main-catalog__slider', {
         type: 'bullets',
         clickable: true
     },
-    autoHeight: true,
     breakpoints: {
         320: {
             slidesPerView: 1,
