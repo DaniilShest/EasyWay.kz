@@ -183,7 +183,7 @@ body.lock {
 .btn {
     background-color: #1d6bb9;
     padding: 11px 31px;
-    border: 3px solid #1d6bb9;
+    border: 2px solid #1d6bb9;
     color: #FFF;
     border-radius: 5px;
     transition: all 0.2s ease;
@@ -196,18 +196,18 @@ body.lock {
 .btn:disabled {
     background-color: #F6F6F6;
     color: #707070;
-    border: 3px solid transparent;
+    border: 2px solid transparent;
 }
 
 .btn:disabled:hover {
     cursor: default;
     background-color: #F6F6F6;
     color: #707070;
-    border: 3px solid transparent;
+    border: 2px solid transparent;
 }
 
 .btn:hover {
-    border: 3px solid #1d6bb9;
+    border: 2px solid #1d6bb9;
     background: transparent;
     color: #1d6bb9;
 }
@@ -215,7 +215,7 @@ body.lock {
 .btn-light {
     font-weight: 500;
     font-size: 20px;
-    border: 3px solid #1d6bb9;
+    border: 2px solid #1d6bb9;
     color: #1d6bb9;
     border-radius: 5px;
     padding: 11px 41px;
@@ -232,14 +232,14 @@ body.lock {
 .btn-light:disabled {
     background-color: #F6F6F6;
     color: #707070;
-    border: 3px solid transparent;
+    border: 2px solid transparent;
 }
 
 .btn-light:disabled:hover {
     cursor: default;
     background-color: #F6F6F6;
     color: #707070;
-    border: 3px solid transparent;
+    border: 2px solid transparent;
 }
 
 .btn-icon {
@@ -352,6 +352,7 @@ body.lock {
     z-index: 2;
     max-width: 560px;
     height: 460px;
+    flex: 1 1 auto;
 }
 
 @media (max-width: 1100px) {
@@ -768,7 +769,7 @@ body.lock {
     position: absolute;
     width: 100%;
     min-width: 160px;
-    background-color: #F6F6F6;
+    background-color: #FFF;
     border-radius: 10px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -787,7 +788,7 @@ body.lock {
     text-decoration: none;
   /*убираем подчёркивание*/
     display: inline-block;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
     white-space: nowrap;
 }
 
@@ -904,6 +905,10 @@ body.lock {
     display: none;
 }
 
+.main-slider {
+    margin-top: 24px;
+}
+
 @media (max-width: 600px) {
     .main-slider {
         margin-top: 0;
@@ -957,6 +962,11 @@ body.lock {
     background: #007aff;
 }
 
+.main-catalog {
+    background-color: #F3F9FF;
+    margin-top: 40px;
+}
+
 .main-catalog__container {
     overflow: hidden;
     align-items: stretch !important;
@@ -991,10 +1001,6 @@ body.lock {
     background: #1d6bb9;
     width: 36px;
     border-radius: 20px;
-}
-
-.main-about {
-    background-color: #FFF;
 }
 
 .main-about__description {
@@ -2353,6 +2359,7 @@ body.lock {
 
 .contacts-main {
     padding: 10px 0;
+    margin-bottom: 30px;
 }
 
 .contacts-main__wrapper {
@@ -2382,8 +2389,9 @@ body.lock {
 }
 
 .contacts-main__map {
-    width: 500px;
-    height: 560px;
+    max-width: 560px;
+    height: 460px;
+    flex: 1 1 auto;
     padding: 30px 0;
     position: relative;
 }
