@@ -132,6 +132,14 @@
                     <div class="container">
                         <h1 class="page-main__title"> <span>Подъемники</span> для инвалидов</h1>
                         <div class="catalog__inner">
+                            <div class="dropdown">
+                                <button type='button' class="dropdown__button">Все подъемники</button>
+                                <ul class="dropdown__list">
+                                    <li data-value="Все подъемники" class="dropdown__list-item dropdown__list-item_active"></li>
+                                    <li data-value="Вертикальные" class="dropdown__list-item">Вертикальные</li>
+                                    <input type="text" name="select-category" value="" class="dropdown__input_hidden">
+                                </ul>
+                            </div>
                             <div class="catalog__filters">
                                 <button class="btn-light btn-icon">
                                     <svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -196,11 +204,10 @@
                                         <span> Лестничные
                                         </span></a></button>
                             </div>
-                            
-                            <ul class="catalog__items">
+                            <!-- <ul class="catalog__items">
                                 <li class=" catalog-item">
-                                    <a href="./item.html">
-                                        <img src="./assets/img/catalog/sample.webp" alt="" class="catalog-item__img"></a>
+                                    <a href="./item.html" class="catalog-item__img">
+                                        <img src="./assets/img/catalog/sample.webp" alt=""></a>
                                     <div class="catalog-item__info">
                                         <a href="./item.html">
                                             <h2 class="catalog-item__title"> ВПМ-001
@@ -234,8 +241,8 @@
                                         <a href="./item.html" class="catalog-item__btn btn">Подробнее</a>
                                     </div>
                                 </li>                <li class=" catalog-item">
-                                    <a href="./item.html">
-                                        <img src="./assets/img/catalog/sample.webp" alt="" class="catalog-item__img"></a>
+                                    <a href="./item.html" class="catalog-item__img">
+                                        <img src="./assets/img/catalog/sample.webp" alt=""></a>
                                     <div class="catalog-item__info">
                                         <a href="./item.html">
                                             <h2 class="catalog-item__title"> ВПМ-001
@@ -269,8 +276,8 @@
                                         <a href="./item.html" class="catalog-item__btn btn">Подробнее</a>
                                     </div>
                                 </li>                <li class=" catalog-item">
-                                    <a href="./item.html">
-                                        <img src="./assets/img/catalog/sample.webp" alt="" class="catalog-item__img"></a>
+                                    <a href="./item.html" class="catalog-item__img">
+                                        <img src="./assets/img/catalog/sample.webp" alt=""></a>
                                     <div class="catalog-item__info">
                                         <a href="./item.html">
                                             <h2 class="catalog-item__title"> ВПМ-001
@@ -304,8 +311,8 @@
                                         <a href="./item.html" class="catalog-item__btn btn">Подробнее</a>
                                     </div>
                                 </li>                <li class=" catalog-item">
-                                    <a href="./item.html">
-                                        <img src="./assets/img/catalog/sample.webp" alt="" class="catalog-item__img"></a>
+                                    <a href="./item.html" class="catalog-item__img">
+                                        <img src="./assets/img/catalog/sample.webp" alt=""></a>
                                     <div class="catalog-item__info">
                                         <a href="./item.html">
                                             <h2 class="catalog-item__title"> ВПМ-001
@@ -339,8 +346,8 @@
                                         <a href="./item.html" class="catalog-item__btn btn">Подробнее</a>
                                     </div>
                                 </li>                <li class=" catalog-item">
-                                    <a href="./item.html">
-                                        <img src="./assets/img/catalog/sample.webp" alt="" class="catalog-item__img"></a>
+                                    <a href="./item.html" class="catalog-item__img">
+                                        <img src="./assets/img/catalog/sample.webp" alt=""></a>
                                     <div class="catalog-item__info">
                                         <a href="./item.html">
                                             <h2 class="catalog-item__title"> ВПМ-001
@@ -374,8 +381,8 @@
                                         <a href="./item.html" class="catalog-item__btn btn">Подробнее</a>
                                     </div>
                                 </li>                <li class=" catalog-item">
-                                    <a href="./item.html">
-                                        <img src="./assets/img/catalog/sample.webp" alt="" class="catalog-item__img"></a>
+                                    <a href="./item.html" class="catalog-item__img">
+                                        <img src="./assets/img/catalog/sample.webp" alt=""></a>
                                     <div class="catalog-item__info">
                                         <a href="./item.html">
                                             <h2 class="catalog-item__title"> ВПМ-001
@@ -409,8 +416,8 @@
                                         <a href="./item.html" class="catalog-item__btn btn">Подробнее</a>
                                     </div>
                                 </li>                <li class=" catalog-item">
-                                    <a href="./item.html">
-                                        <img src="./assets/img/catalog/sample.webp" alt="" class="catalog-item__img"></a>
+                                    <a href="./item.html" class="catalog-item__img">
+                                        <img src="./assets/img/catalog/sample.webp" alt=""></a>
                                     <div class="catalog-item__info">
                                         <a href="./item.html">
                                             <h2 class="catalog-item__title"> ВПМ-001
@@ -444,8 +451,8 @@
                                         <a href="./item.html" class="catalog-item__btn btn">Подробнее</a>
                                     </div>
                                 </li>                <li class=" catalog-item">
-                                    <a href="./item.html">
-                                        <img src="./assets/img/catalog/sample.webp" alt="" class="catalog-item__img"></a>
+                                    <a href="./item.html" class="catalog-item__img">
+                                        <img src="./assets/img/catalog/sample.webp" alt=""></a>
                                     <div class="catalog-item__info">
                                         <a href="./item.html">
                                             <h2 class="catalog-item__title"> ВПМ-001
@@ -478,10 +485,12 @@
                                         </ul>
                                         <a href="./item.html" class="catalog-item__btn btn">Подробнее</a>
                                     </div>
-                                </li>            </ul>
+                                </li>            </ul> -->
                         </div>
                     </div>
                 </section>
+                
+                <script src="./assets/js/catalog.js"></script>
             </div>
         </main>
         <div class="popup" id="popup">
