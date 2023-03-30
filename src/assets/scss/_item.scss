@@ -129,6 +129,10 @@
         color: $dark;
         line-height: 30px;
 
+        &.mobile {
+            display: none;
+        }
+
         @media (max-width: 1020px) {
             display: none;
 
@@ -144,6 +148,10 @@
         color: $lightdark;
         line-height: 38px;
         margin-bottom: 20px;
+
+        &.mobile {
+            display: none;
+        }
 
         @media (max-width: 1020px) {
             display: none;

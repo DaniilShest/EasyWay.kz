@@ -1956,6 +1956,10 @@ body.lock {
     line-height: 30px;
 }
 
+.item-info__title.mobile {
+    display: none;
+}
+
 @media (max-width: 1020px) {
     .item-info__title {
         display: none;
@@ -1972,6 +1976,10 @@ body.lock {
     color: #414141;
     line-height: 38px;
     margin-bottom: 20px;
+}
+
+.item-info__subtitle.mobile {
+    display: none;
 }
 
 @media (max-width: 1020px) {
