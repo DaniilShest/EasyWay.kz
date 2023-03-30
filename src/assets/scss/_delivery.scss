@@ -26,6 +26,7 @@
         border-spacing: 0;
         border-collapse: collapse;
         margin-bottom: 20px;
+        overflow: auto;
 
         tr {
             &:last-child {
@@ -62,6 +63,10 @@
 
         &.left {
             text-align: left;
+        }
+
+        @media (max-width: 500px) {
+            padding: 5px 10px;
         }
     }
 

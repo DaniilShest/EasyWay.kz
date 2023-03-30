@@ -1,10 +1,7 @@
 const itemSlider = new Swiper('.item__slider', {
     speed: 500,
-    spaceBetween: 100,
-    // autoplay: {
-    //     delay: 5000,
-    // },
     autoHeight: true,
+    spaceBetween: 20,
     navigation: {
         nextEl: '.item-slider-next',
         prevEl: '.item-slider-prev',
@@ -16,7 +13,25 @@ const itemSlider = new Swiper('.item__slider', {
             spaceBetween: 5,
             autoHeight: true,
             slidesPerView: 3,
-            slideThumbActiveClass: 'item-minislider__slide-active'
+            slideThumbActiveClass: 'item-minislider__slide-active',
+            breakpoints: {
+                320: {
+                    slidesPerView: 3,
+                    spaceBetween: 5
+                },
+                580: {
+                    slidesPerView: 4,
+                    spaceBetween: 5
+                },
+                800: {
+                    slidesPerView: 5,
+                    spaceBetween: 5
+                },
+                1020: {
+                    slidesPerView: 3,
+                    spaceBetween: 5
+                }
+            }
         }
     }
 });
@@ -30,33 +45,30 @@ for (let i = 0; i < itemImgs.length; i++) {
     });
 }
 
-const step = document.getElementById('item-constuctor-step')
-const next = document.getElementById('item-constuctor-next')
-const prev = document.getElementById('item-constuctor-prev')
-const price = document.getElementById('item-constuctor-price')
+const step = document.getElementById('item-constructor-step')
+const next = document.getElementById('item-constructor-next')
+const prev = document.getElementById('item-constructor-prev')
+const price = document.getElementById('item-constructor-price')
 const submitBtn = document.getElementById('item-constructor-submit')
-const points = document.getElementById('item-constuctor-points')
-const line = document.getElementById('item-constuctor-line')
-const img = document.getElementById('item-constuctor-img')
+const points = document.getElementById('item-constructor-points')
+const line = document.getElementById('item-constructor-line')
+const img = document.getElementById('item-constructor-img')
 
-document.querySelectorAll('a[href^="#"').forEach(link => {
+document.querySelector('a[href^="#constructor"').addEventListener('click', function (e) {
+    e.preventDefault();
 
-    link.addEventListener('click', function (e) {
-        e.preventDefault();
+    let href = this.getAttribute('href').substring(1);
 
-        let href = this.getAttribute('href').substring(1);
+    const scrollTarget = document.getElementById(href);
 
-        const scrollTarget = document.getElementById(href);
+    // const topOffset = document.querySelector('.item-constructor').offsetHeight;
+    const topOffset = 100; // если не нужен отступ сверху 
+    const elementPosition = scrollTarget.getBoundingClientRect().top;
+    const offsetPosition = elementPosition - topOffset;
 
-        // const topOffset = document.querySelector('.item-constuctor').offsetHeight;
-        const topOffset = 100; // если не нужен отступ сверху 
-        const elementPosition = scrollTarget.getBoundingClientRect().top;
-        const offsetPosition = elementPosition - topOffset;
-
-        window.scrollBy({
-            top: offsetPosition,
-            behavior: 'smooth'
-        });
+    window.scrollBy({
+        top: offsetPosition,
+        behavior: 'smooth'
     });
 });
 
@@ -334,10 +346,10 @@ const formSteps = [
 
 
 function updateStep(index) {
-    step.innerHTML = `<div class="item-constuctor__question">${formSteps[index].title}</div>`
+    step.innerHTML = `<div class="item-constructor__question">${formSteps[index].title}</div>`
     if (formSteps[index].title !== 'Оставить заявку') {
         formSteps[index].options.forEach(option => {
-            step.innerHTML += `<a class="btn-light item-constuctor__btn" data-img=${option.img} data-price="${option.data}">${option.title}</a>`
+            step.innerHTML += `<a class="btn-light item-constructor__btn" data-img=${option.img} data-price="${option.data}">${option.title}</a>`
         })
     } else {
         step.innerHTML += `
@@ -363,7 +375,7 @@ function updateStep(index) {
 
 function updateBtns() {
     if (activeStep < formSteps.length - 1) {
-        const btns = document.querySelectorAll('.item-constuctor__btn')
+        const btns = document.querySelectorAll('.item-constructor__btn')
         btns.forEach(btn => {
             btn.addEventListener('click', () => {
                 btns.forEach(el => {
@@ -455,7 +467,7 @@ function updatePoints() {
     }
     points.innerHTML = ''
     for (let i = 0; i < formSteps.length; i++) {
-        points.innerHTML += `<div class="item-constuctor__point ${pointsArray[i] ? 'active' : ''}"><span>${i + 1}</span></div>`
+        points.innerHTML += `<div class="item-constructor__point ${pointsArray[i] ? 'active' : ''}"><span>${i + 1}</span></div>`
     }
 }
 
