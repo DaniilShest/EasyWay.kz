@@ -251,7 +251,7 @@ body.lock {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 11px 30px;
+    padding: 11px;
     margin-bottom: 20px;
 }
 
