@@ -2608,6 +2608,10 @@ body.lock {
     }
 }
 
+.careers {
+    background-color: #F3F9FF;
+}
+
 .career {
     margin-bottom: 30px;
 }
@@ -2746,6 +2750,11 @@ body.lock {
     }
 }
 
+.delivery-items {
+    background-color: #F3F9FF;
+    margin-top: 40px;
+}
+
 .delivery-map__text {
     margin-bottom: 20px;
     font-size: 20px;
@@ -2817,6 +2826,15 @@ body.lock {
 
 .about__text:last-child {
     margin-bottom: 0;
+}
+
+.about-text {
+    background-color: #F3F9FF;
+}
+
+.service-cards {
+    background-color: #F3F9FF;
+    margin-top: 40px;
 }
 
 .service-items__list {
