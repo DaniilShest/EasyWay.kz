@@ -723,6 +723,18 @@ body.lock {
     transition-duration: 0.25s;
 }
 
+.menu__box-links {
+    max-height: 420px;
+    overflow-y: auto;
+}
+
+.menu__box-btns {
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    top: 500px;
+}
+
 .menu__item {
     display: block;
     padding: 12px 24px;
@@ -761,15 +773,6 @@ body.lock {
 .menu__item:hover {
     background-color: #1d6bb9;
     color: #FFF;
-}
-
-/* Dropdown Button */
-.dropbtn {
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -861,10 +864,9 @@ body.lock {
 
 .accordion:after {
     content: url(../img/career/arrow.svg);
-    color: #1d6bb9;
-    font-weight: bold;
     float: right;
     margin-left: 5px;
+    transition: all 0.2s ease;
 }
 
 .accordion.active, .accordion:hover {
@@ -877,8 +879,8 @@ body.lock {
 }
 
 .accordion.active::after {
-    content: "−";
-    color: #FFF;
+    transform: scale(1, -1);
+    content: url(../img/career/arrow-wht.svg);
 }
 
 .panel {
