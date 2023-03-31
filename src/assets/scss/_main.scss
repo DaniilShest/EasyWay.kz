@@ -8,6 +8,14 @@
     .main__pagination {
         position: relative;
         top: 40px;
+
+        @media (max-width: 960px) {
+            top: 75px;
+
+            @media (max-width: 880px) {
+                top: 40px;
+            }
+        }
     }
 
     &__description {
@@ -110,6 +118,25 @@
 
     &__info {
         align-items: center;
+    }
+
+    &__blue {
+        @media (max-width: 880px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__img {
+        margin-right: 20px;
+
+        @media (max-width: 1000px) {
+            width: 420px;
+
+            @media (max-width: 880px) {
+                width: 100%;
+                margin-right: 0;
+            }
+        }
     }
 
     &__about {

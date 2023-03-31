@@ -72,6 +72,10 @@ body {
 
 .first-section {
     padding-top: 50px;
+
+    @media (max-width: 880px) {
+        padding-top: 20px;
+    }
 }
 
 .logo {

@@ -346,7 +346,8 @@ const formSteps = [
 
 
 function updateStep(index) {
-    step.innerHTML = `<div class="item-constructor__question">${formSteps[index].title}</div>`
+    step.innerHTML = `<div class="item-constructor__point-mobile">Шаг ${index + 1} из ${formSteps.length}</div>`
+    step.innerHTML += `<div class="item-constructor__question">${formSteps[index].title}</div>`
     if (formSteps[index].title !== 'Оставить заявку') {
         formSteps[index].options.forEach(option => {
             step.innerHTML += `<a class="btn-light item-constructor__btn" data-img=${option.img} data-price="${option.data}">${option.title}</a>`
