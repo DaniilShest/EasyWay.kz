@@ -61,9 +61,16 @@
     }
 
     &__cost {
+        text-decoration: line-through;
+        color: $primary;
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    &__sale {
         font-weight: 700;
         font-size: 20px;
-        color: $primary;
+        color: $red;
         margin-bottom: 10px;
     }
 
