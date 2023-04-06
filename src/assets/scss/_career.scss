@@ -107,7 +107,7 @@
         li {
             margin-left: 10px;
             display: flex;
-            align-items: center;
+            align-items: flex-start;
 
             @media (max-width: 560px) {
                 align-items: flex-start;
@@ -117,11 +117,8 @@
             svg {
                 margin-right: 5px;
                 flex: 0 0 auto;
-
-                @media (max-width: 560px) {
-                    position: relative;
-                    top: 7px;
-                }
+                position: relative;
+                top: 7px;
             }
         }
     }
