@@ -419,13 +419,12 @@ body.lock {
 
 .page-main__description {
     margin-right: 20px;
-    position: relative;
-    top: 50px;
+    margin-top: 50px;
 }
 
 @media (max-width: 880px) {
     .page-main__description {
-        top: 0;
+        margin-top: 0;
     }
 }
 
@@ -563,6 +562,10 @@ body.lock {
 
 .header__contact:last-child {
     margin-right: 0px;
+}
+
+.header__contact span {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 @media (max-width: 1000px) {
@@ -1409,6 +1412,7 @@ body.lock {
 
 .checkbox label {
     cursor: pointer !important;
+    margin-left: 5px;
 }
 
 @media (max-width: 560px) {
@@ -1511,6 +1515,7 @@ body.lock {
     font-weight: 400;
     border-radius: 5px;
     border: 2px solid rgba(0, 0, 0, 0);
+    resize: none;
 }
 
 .popup_btn {
@@ -1675,9 +1680,16 @@ body.lock {
 }
 
 .catalog-item__cost {
+    text-decoration: line-through;
+    color: #1d6bb9;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.catalog-item__sale {
     font-weight: 700;
     font-size: 20px;
-    color: #1d6bb9;
+    color: #FC4853;
     margin-bottom: 10px;
 }
 
@@ -2613,6 +2625,7 @@ body.lock {
 
 .careers {
     background-color: #F3F9FF;
+    margin-top: 40px;
 }
 
 .career {
