@@ -970,6 +970,11 @@ body.lock {
     }
 }
 
+.main-slider #main-slider__cost {
+    -o-object-position: left;
+    object-position: left;
+}
+
 .main-slider .swiper-pagination {
     position: absolute;
     text-align: left;
