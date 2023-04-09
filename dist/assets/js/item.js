@@ -370,7 +370,8 @@ function updateStep(index) {
     } else {
         updateControls()
     }
-    updatePoints()
+
+    setTimeout(updatePoints, 150)
     updateLine()
 }
 

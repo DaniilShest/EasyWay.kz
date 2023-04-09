@@ -25,7 +25,6 @@
     }
 
     &__table {
-        min-width: 925px;
         border-radius: 5px;
         width: 100%;
         border-spacing: 0;
@@ -56,6 +55,12 @@
         &:last-child {
             border-top-right-radius: 5px;
         }
+
+        &.hide {
+            @media (max-width: 990px) {
+                display: none;
+            }
+        }
     }
 
     &__column {
@@ -66,12 +71,23 @@
         width: 25%;
         text-align: center;
 
+        @media (max-width: 990px) {
+            width: 50%;
+            font-size: 16px;
+        }
+
         &.left {
             text-align: left;
         }
 
         @media (max-width: 500px) {
             padding: 5px 10px;
+        }
+
+        &.hide {
+            @media (max-width: 990px) {
+                display: none;
+            }
         }
     }
 

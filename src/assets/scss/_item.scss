@@ -541,6 +541,7 @@
         font-weight: 700;
         font-size: 18px;
         position: relative;
+        transition: all .2s ease;
 
         &.active {
             color: #FFF;
