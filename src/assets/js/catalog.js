@@ -19,6 +19,7 @@ document.querySelectorAll('.filter-dropdown').forEach(function (dropdownWrapper)
             })
             e.target.classList.add('filter-dropdown__list-item_active');
             dropdownBtn.innerText = this.innerText;
+            dropdownBtn.style.backgroundImage = `url(assets/img/catalog/icons/${this.dataset.image}.svg)`
             dropdownInput.value = this.dataset.value;
             dropdownList.classList.remove('filter-dropdown__list_visible');
         })

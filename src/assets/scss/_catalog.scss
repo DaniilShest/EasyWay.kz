@@ -72,19 +72,24 @@
             display: flex;
             align-items: center;
             font-size: 16px;
+            font-weight: 500;
             line-height: 18px;
-            color: $dark;
+            color: $primary;
             width: 100%;
             text-align: left;
             background: #FFF;
-            border: 2px solid $lightgray;
+            border: 2px solid $primary;
             border-radius: 4px;
             height: 50px;
             padding-top: 10px;
             padding-bottom: 10px;
-            padding-left: 15px;
+            padding-left: 42px;
             padding-right: 40px;
             cursor: pointer;
+            background-image: url(../img/catalog/icons/all.svg);
+            background-size: 25px;
+            background-repeat: no-repeat;
+            background-position: center left 10px;
 
             &::after {
                 content: "";
@@ -133,16 +138,29 @@
 
             &-item {
                 margin: 0;
-                padding: 0;
                 padding: 15px;
                 cursor: pointer;
                 font-size: 15px;
                 line-height: 18px;
                 color: #444444;
                 transition: 200ms ease;
+                position: relative;
 
                 &_active {
                     background: $lightbg;
+                }
+
+                svg {
+                    width: 20px;
+                    height: 30px;
+                    position: absolute;
+                    top: 50%;
+                    left: 10px;
+                    transform: translateY(-50%);
+                }
+
+                span {
+                    padding-left: 23px;
                 }
 
                 &:hover {
