@@ -214,7 +214,7 @@
 }
 
 .menu__box-links {
-    max-height: 480px;
+    max-height: 360px;
     overflow-y: auto;
 }
 
@@ -223,6 +223,10 @@
     margin: 0 auto;
     width: 100%;
     bottom: 40px;
+
+    @media (max-height: 600px) {
+        bottom: 10px;
+    }
 }
 
 .menu__item {
